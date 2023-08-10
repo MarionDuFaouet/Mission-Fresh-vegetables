@@ -7,10 +7,10 @@ Mes questions pour l'instant sont :
 
 -Dans l'énoncé, on me dit que la largeur du bloc doit être de 1200px. Je ne comprend pas à quoi ça correspond? <br>
 -Pourquoi je n'arrive pas à changer la graisse des caractères? J'ai essayé sans succès différentes taille de la typo poppins (200, 300, etc) sur google font, sans succès. Ils parlent d'équilibrer la typo?<br>
--A ton avis dois-je séparer mes fichiers en plusieurs parties (c'est à dire créer plusieurs pages html et css)? Si oui, comment procéder?<br>
--Je ne maitrise pas bien les flexbox, et tu remarquera que j'ai des soucis d'alignement de texte ou d'image. C'est peut-être aussi que je ne maitrise pas les balises div ou class<br>
+-A ton avis dois-je séparer mes fichiers en plusieurs parties (c'est à dire créer plusieurs pages html et css)? Si oui, comment procéder? La dernière fois, en voulant faire ça, j'ai effacé tout mon css );<br>
+-Je ne maitrise pas bien les flexbox, et tu remarquera que j'ai des soucis d'alignement de texte ou d'image. C'est peut-être aussi que je ne maitrise pas les balises div class et id.<br>
 -Y a t'il une méthode pour 'mesurer', copier au mieux la mise en page de la maquette ou doit-on le faire à l'oeil?<br>
--Un slider est visible en fin de header sur la maquette, mais je sais pas comment faire. Je vais continuer de chercher.<br>
--sur la maquette on voit deux chiffres verts sur les photos de la partie fresh vegetable. A ton avis, qu'est-ce que cela signifie?<br>
+-Je vois des slider en fin de header et à la section avis sur la maquette, mais je sais pas comment faire. Je vais continuer de chercher...<br>
+-Sur la maquette toujours on voit deux chiffres verts sur les photos de la partie fresh vegetable. A ton avis, à quoi ça correspond?<br>
 
-Merci par avance du temps que tu pourra accorder à mon exercice :)
+Merci par avance du temps que tu pourra accorder à mon exercice, et aussi de ton indulgence :)
