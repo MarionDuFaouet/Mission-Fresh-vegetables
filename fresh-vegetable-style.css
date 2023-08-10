@@ -5,7 +5,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
-    color: #000;
+    
 
 }
 
@@ -54,7 +54,7 @@ header div {
     margin-bottom: px;
 }
 
-header div :hover {
+header nav :hover {
     color: #43960f;
 }
 
