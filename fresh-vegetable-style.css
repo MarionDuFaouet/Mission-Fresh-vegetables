@@ -190,7 +190,7 @@ tentative ratée d'image de fond*/
 }
 
 
-#contact{
+#contact{ /*placer image de fond, graisser titre*/
     text-align: center;
     font-size: 2.8em;
 }
@@ -202,19 +202,22 @@ tentative ratée d'image de fond*/
 .contact div{
     margin: 50px 100px 50px 100px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding-bottom: 50px; 
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
     
 }
 
-form{
+form{/*réussir à affiner les bordures, élargir et étirer les entrées*/ 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-left:24px;
+    border: #ecebf0;
+
 }
 
-.envoyer {
+.envoyer { /* détacher du formulaire pour aligner à droite, ajuster padding et margin*/
     color: #fff;
     border: none;
     background: #43960f;
