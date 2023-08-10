@@ -147,22 +147,71 @@ header div :hover {
     color: #43960f;
 }
 
-.fresh-vegetable div{
+.fresh-vegetable div{   /*postion absolute, flexbox*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 120px;
-    align-items: center;
+   
 }
 
 .hiver{
-position: absolute; /*alignée à gauche*/
+position: absolute; /*alignée en bas à gauche*/
 width: 550px;
+
+
 }
 .panier{
     width: 450px;
+    position: relative; /*aligné en haut à droite*/
+}
+
+/*#chou{
+    background-image: url(test2.png);
+}
+.temoignages div{
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin: 0px auto;
+}
+tentative ratée d'image de fond*/
+
+.temoignage h1{
+    text-align: right;
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+/*essai cadre blanc*/.temoignage div{
+    background-color: #fff;
+}
+
+
+#contact{
+    text-align: center;
+    font-size: 2.8em;
+}
+
+#contact span{
+    color: #43960f;
+}
+
+.contact div{
+    margin: 50px 100px 50px 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 50px; 
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
 
 .envoyer {
@@ -172,9 +221,7 @@ width: 550px;
     padding: 8px 25px;
 }
 
-.temoignages{
-    background-image: ../images(test2png); /*comment remonter pour aller cherche la photo?*/
-}
+
 
 footer {
     color: #fff;
