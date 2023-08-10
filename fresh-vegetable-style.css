@@ -236,6 +236,18 @@ footer a {
     text-decoration: none;
 }
 
+.footer{   /*réviser les grids, appliquer des id à chaque élément, et fixer*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 19px 60px 60px; /*ajuster les valeurs*/
+    gap: 20px /*espacement*/
+}
+.box2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-column-end: 3;
+}
 .inscription {
     background: #43960f;
     color: #fff;
@@ -250,6 +262,8 @@ footer a {
     height: 25px;
     width: auto;
 }
+
+
 
 .copyright {
     color: #fff;
