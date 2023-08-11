@@ -10,6 +10,5 @@ Mes questions pour l'instant sont :
 -Y a t'il une méthode pour 'mesurer', copier au mieux la mise en page de la maquette ou doit-on le faire à l'oeil?<br>
 -Je vois des slider en fin de header et à la section avis sur la maquette, mais je sais pas comment faire. Je vais continuer de chercher...<br>
 -Sur la maquette toujours on voit deux chiffres verts sur les photos de la partie fresh vegetable. A ton avis, à quoi ça correspond?<br>
-Je n'arrive pas à insérer des images de fond, le css n'accepte pas le point dans mon url, il le souligne en rouge (test2.png).
 
 Merci par avance du temps que tu pourra accorder à mon exercice, et aussi de ton indulgence :)
