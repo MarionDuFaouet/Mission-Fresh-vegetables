@@ -13,7 +13,6 @@ p {
 }
 
 header {
-    display: flex;
     background-color: #ecebf0;
     display: inline-block;
     text-decoration: none;
@@ -94,6 +93,9 @@ header nav :hover {
 
 
 
+#img_a_propos {
+    height: 470px;
+}
 
 .a-propos {
     display: flex;
@@ -120,9 +122,9 @@ header nav :hover {
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 2.2em;
-    font-weight: 900;/*toujours ce soucis de graisse*/
+    font-weight: 900;    /*toujours ce soucis de graisse*/
     color: #fff;
-    display: inline-block;
+    
     background-color: #43960f;
     padding: 5px 17px 5px 17px;
 }
@@ -132,51 +134,70 @@ header nav :hover {
 }
 
 
-#img_a_propos {
-    
-    height: 470px;
-   
-}
-
-
-
 
 
 
 #fresh_vegetable {
     text-align: center;
     font-size: 2.8em;
-    /*tjs le pb de graisse*/
+    font-weight: 700;/*tjs le pb de graisse*/
+    margin-bottom: 50px;
 }
 
 .fresh-vegetable span {
     color: #43960f;
 }
 
-.fresh-vegetable div {
-    /*postion absolute, flexbox*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 120px;
-
+.fresh-vegetable h2{
+    margin-bottom: 10px;
 }
 
-.hiver {
+.conteneur_fresh{
+    display: flex;
+    margin: 0px 80px 100px 80px;
+    height: 700px; /*mes elements flex ne dépassent pas, mais je ne pense pas que ce soit la mailleure méthode */
+    justify-content: space-between;
+    position: relative;
+}
+
+.textfv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
-    /*alignée en bas à gauche*/
-    width: 550px;
-
-
+    right: 0px;
+    top: 0px;
+    align-items: flex-start;
+    /* flex-grow: 1;
+    flex-basis: auto;    pour adapter le texte à l'espace vide?*/
+    
 }
 
 .panier {
-    width: 450px;
-    position: relative;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
     /*aligné en haut à droite*/
+    
 }
+
+.hiver {
+    height: 410px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index: 2;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+
 
 /*#chou{
     background-image: url(test2.png);
@@ -189,6 +210,9 @@ header nav :hover {
 }
 tentative ratée d'image de fond*/
 
+.temoignage{
+    margin-top: 20px;
+}
 .temoignage h1 {
     text-align: right;
     font-weight: bold;

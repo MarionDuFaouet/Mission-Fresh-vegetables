@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh vegetable</title>
     <link rel="stylesheet" href="fresh-vegetable-style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -54,14 +55,14 @@
                 <h1 id="a_propos_titre">A PROPOS</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
                     Commodi consequatur quasi rem, impedit atquibusdam. <br>
-                    Natus sapiente eaque numquam voluptatum veniam <br> 
+                    Natus sapiente eaque numquam voluptatum veniam <br>
                     Nobis quaerat id reiciendis, odit esse impedit libero cupiditate <br>
                     repellat adipisci reprehenderit numquam velit alias temporibus <br>
                     distinctio facilis quisquam iste, beatae similique assumenda <br>
                     sapiente vel tempora explicabo quam architecto? At molestias cum <br>
-                    id quos ipsam sed magnam? Expedita perferendis, quibusdam a velit <br> 
-                    quae laudantium, eveniet inventore vel reprehenderit <br> 
-                    tenetur itaque nam aliquam, aliquid deserunt. Rem quaerat animi,<br> 
+                    id quos ipsam sed magnam? Expedita perferendis, quibusdam a velit <br>
+                    quae laudantium, eveniet inventore vel reprehenderit <br>
+                    tenetur itaque nam aliquam, aliquid deserunt. Rem quaerat animi,<br>
                     tempore provident, blanditiis quas in aut, <br>
                     ipsum modi consectetur ad deleniti!</p>
                 <nav>
@@ -76,16 +77,21 @@
 
         <section class="fresh-vegetable">
             <h1 id="fresh_vegetable">FRESH <span>VEGETABLE</span></h1>
-            <div>
-                <h2>Meilleur "Vegetables Shop"</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi velit possimus. Laboriosam
-                    ullam
-                    similique ea amet odit rerum at incidunt reprehenderit temporibus quod perferendis aliquam eos,
-                    reiciendis officia sequi repellendus est magnam delectus id non saepe in. Nulla, aperiam molestias?
-                    Accusamus, temporibus fugit commodi quisquam ullam magnam voluptate, laudantium deserunt facilis aut
-                    ducimus, illum id ad quia odio odit.</p>
-                <img src="images/v1.jpg" class="panier" alt="Panier de légumes">
-                <img src="images/v2.jpg" class="hiver"  alt="Légumes d'hiver">
+            <div class="conteneur_fresh"> <!--flexbox-->
+                <div class="textfv">
+                    <h2>Meilleur "Vegetables Shop"</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi velit possimus. Laboriosam
+                        ullam
+                        similique ea amet odit rerum at incidunt reprehenderit temporibus quod perferendis aliquam eos,
+                        reiciendis officia sequi repellendus est magnam delectus id non saepe in. Nulla, aperiam
+                        molestias?
+                        Accusamus, temporibus fugit commodi quisquam ullam magnam voluptate, laudantium deserunt facilis
+                        aut
+                        ducimus, illum id ad quia odio odit.</p>
+                </div>
+                    <img src="images/v1.jpg" class="panier" alt="Panier de légumes">
+                    <img src="images/v2.jpg" class="hiver" alt="Légumes d'hiver">
+                </div>
             </div>
         </section>
 
@@ -94,20 +100,20 @@
         <section class="temoignage"><!--créer un slide avec autres témoignages-->
             <h1 id="temoignage">TÉMOIGNAGES</h1>
             <div id="chou"></div><!--tentative ratée d'image de fond-->
-                
-                    <h3>Joahna</h3>
-                <img src="images/test_con.png" alt="guillemets"></div>
-                <!--propriété text-indent (20px?) dans le css pour décaler nom h1 et avis p sur la droite-->
-                <p>Son avis</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum quam aut magni
-                    tempore voluptatum. Quidem culpa consequatur molestias, animi similique explicabo! Ea quod sint
-                    dolorum
-                    totam suscipit.</p>
-                <img src="images/tes2.jpg" alt="Portrait de cliente">
-                
+
+            <h3>Joahna</h3> <!--display flex-->
+            <img src="images/test_con.png" alt="guillemets"></div>
+            <!--propriété text-indent (20px?) dans le css pour décaler nom h1 et avis p sur la droite-->
+            <p>Son avis</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum quam aut magni
+                tempore voluptatum. Quidem culpa consequatur molestias, animi similique explicabo! Ea quod sint
+                dolorum
+                totam suscipit.</p>
+            <img src="images/tes2.jpg" alt="Portrait de cliente">
 
 
-                <!--<h3>Jeanne</h3>
+
+            <!--<h3>Jeanne</h3>
                 <p>Son avis</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea
                     natus vero
@@ -136,23 +142,23 @@
 
 
         <section class="contact">
-            
+
             <img src="images/banner2.png" alt="Fond carottes, poivrons, piments, concombre"><!--image de fond-->
             <h1 id="contact">NOUS <span>CONTACTER</span></h1>
             <!--flex box form+map, bordure shadow-->
             <div>
-            <form method="get" action="">
-                <input type="text" name="nom" size="" placeholder="Votre nom">
+                <form method="get" action="">
+                    <input type="text" name="nom" size="" placeholder="Votre nom">
 
-                <input type="email" name="email" placeholder="Votre mail">
-                <input type="tel" name="tel" placeholder="Téléphone">
+                    <input type="email" name="email" placeholder="Votre mail">
+                    <input type="tel" name="tel" placeholder="Téléphone">
 
-                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            
-                <input type="submit" value="Envoyer" class="envoyer">
-            </form>
+                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.
+                    <input type="submit" value="Envoyer" class="envoyer">
+                </form>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.
             3729882320295!2d-2.3584127245727258!3d47.579986789816196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f
             13.1!3m3!1m2!1s0x480ff2a998ee6033%3A0x74f0759d81ee6f87!2s5%20Rue%20du%20Calvaire%2C%2056130%20P
             %C3%A9aule!5e0!3m2!1sfr!2sfr!4v1691225781725!5m2!1sfr!2sfr" width="600" height="450" style="border:0
