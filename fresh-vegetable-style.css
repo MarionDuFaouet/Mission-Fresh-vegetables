@@ -7,21 +7,13 @@ body {
 
 }
 
-p {
-    /*??? pas sûre*/
-    line-height: 1.56em;
-}
-
 header {
     background-color: #ecebf0;
     display: inline-block;
     text-decoration: none;
 }
 
-header p {
-    font-weight: bold;
 
-}
 
 #logovg {
     height: 110px;
@@ -88,6 +80,7 @@ header nav :hover {
 
 .accueil p {
     font-size: 1.2em;
+    font-weight: 600;  /*graisse à revoir*/
 }
 
 
@@ -119,14 +112,14 @@ header nav :hover {
 }
 
 #a_propos_titre {
+    display: inline-block;
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 2.2em;
     font-weight: 900;    /*toujours ce soucis de graisse*/
     color: #fff;
-    
     background-color: #43960f;
-    padding: 5px 17px 5px 17px;
+    padding: 7px 21px 7px 21px;
 }
 
 .a-propos p {
@@ -149,6 +142,7 @@ header nav :hover {
 }
 
 .fresh-vegetable h2{
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
