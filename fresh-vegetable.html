@@ -7,9 +7,14 @@
     <title>Fresh vegetable</title>
     <link rel="stylesheet" href="fresh-vegetable-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
+
+
+
 
 <body>
 
@@ -88,27 +93,32 @@
                         aut
                         ducimus, illum id ad quia odio odit.</p>
                 </div>
-                    <img src="images/v1.jpg" class="panier" alt="Panier de légumes">
-                    <img src="images/v2.jpg" class="hiver" alt="Légumes d'hiver">
-                </div>
+                <img src="images/v1.jpg" class="panier" alt="Panier de légumes">
+                <img src="images/v2.jpg" class="hiver" alt="Légumes d'hiver">
+            </div>
             </div>
         </section>
 
 
 
         <section class="temoignage"><!--créer un slide avec autres témoignages-->
-            <h1 id="temoignage">TÉMOIGNAGES</h1>
-            <div id="chou"></div><!--tentative ratée d'image de fond-->
-
-            <h3>Joahna</h3> <!--display flex-->
-            <img src="images/test_con.png" alt="guillemets"></div>
-            <!--propriété text-indent (20px?) dans le css pour décaler nom h1 et avis p sur la droite-->
-            <p>Son avis</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum quam aut magni
-                tempore voluptatum. Quidem culpa consequatur molestias, animi similique explicabo! Ea quod sint
-                dolorum
-                totam suscipit.</p>
-            <img src="images/tes2.jpg" alt="Portrait de cliente">
+            <div id="chou">
+                <h1 id="temoignage_titre">TÉMOIGNAGES</h1>
+                <div id="conteneur_vert">
+                    <div id="avis"><h3>Joahna</h3>
+                    <p>Son avis</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum quam aut
+                        magni
+                        tempore voluptatum. Quidem culpa consequatur molestias, animi similique explicabo! Ea quod sint
+                        dolorum
+                        totam suscipit.</p>
+                    </div>
+                    <div id="conteneur_portrait">
+                        <img src="images/tes2.jpg" alt="Portrait de cliente" id="tes2">
+                        <img src="images/test_con.png" alt="guillemets" id="guillemets">
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -141,8 +151,7 @@
 
 
         <section class="contact">
-
-            <img src="images/banner2.png" alt="Fond carottes, poivrons, piments, concombre"><!--image de fond-->
+            <div id="banner"></div>
             <h1 id="contact">NOUS <span>CONTACTER</span></h1>
             <!--flex box form+map, bordure shadow-->
             <div>
