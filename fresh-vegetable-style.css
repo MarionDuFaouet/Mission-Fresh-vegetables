@@ -191,15 +191,17 @@ header nav :hover {
 }
 
 
-
+/* Je n'arrive pas à fixer le conteneur portrait au conteneur vert, et je ne suis meme pas sure que 
+tout cela soit fixé au fond d'écran */
 .temoignage{
     display: flex;
-    position: relative;
     margin: 0px px 100px 80px;
-    height: 700px;
+    height: 950px;
 }
 
 .temoignage h1 {
+    display: flex;
+    justify-content: flex-end;
     text-align: right;
     font-weight: bold;
     font-size: 2.8em;
@@ -212,12 +214,17 @@ header nav :hover {
 #conteneur_portrait{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: absolute;  
     background-color: #fff;
     padding: 15px;
-    justify-content: space-between;
+    
     align-items: center;
 }
+
+#guillemets{
+    margin-top: 10px;
+}
+
 #avis{
     color: #fff;
     display: flex;
@@ -228,6 +235,7 @@ header nav :hover {
 
 #conteneur_vert{
     display: flex;
+    display: inline-block;
     flex-direction: row;
     position: relative;
     background-color: rgba(67,150,15,0.8);
@@ -245,14 +253,18 @@ header nav :hover {
 
 
 
+.contact{
+    
+    margin: 0px px 100px 80px;
+    height: 700px;
+}
 
 #banner{
     background-image: url("banner2.png");
-    background-position: center;
+    background-size: cover;
 }
 
-#contact {
-    /*placer image de fond, graisser titre*/
+#contact{
     text-align: center;
     font-size: 2.8em;
 }
@@ -262,8 +274,9 @@ header nav :hover {
 }
 
 .contact div {
+    background-color: #fff;
     margin: 50px 100px 50px 100px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -271,22 +284,29 @@ header nav :hover {
 }
 
 form {
-    /*réussir à affiner les bordures, élargir et étirer les entrées*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 24px;
-    border: #ecebf0;
-
+    margin: 30px 0px 30px 5px;
 }
+
+.form_style input, textarea{   /* leur appliquer une propriété pour occuper tout l'espace disponible horizontalement */
+display: block;
+padding: 15px;
+border: 0.5px #ecebf0 solid;
+/* margin: 0; j'essaie de centrer verticalement */
+}
+
 
 .envoyer {
     /* détacher du formulaire pour aligner à droite, ajuster padding et margin*/
     color: #fff;
     border: none;
     background: #43960f;
-    padding: 8px 25px;
+    padding: 10px 25px 10px 25px;
 }
+
+
 
 
 
