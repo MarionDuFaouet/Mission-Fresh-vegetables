@@ -195,7 +195,7 @@ header nav :hover {
 .temoignage{
     display: flex;
     position: relative;
-    margin: 0px 0px 100px 80px;
+    margin: 0px px 100px 80px;
     height: 700px;
 }
 
@@ -230,7 +230,7 @@ header nav :hover {
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #43960f;
+    background-color: rgba(67,150,15,0.8);
 }
 
 
