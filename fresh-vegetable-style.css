@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-/* width: 1200px;    Est-ce que c'est juste ça la largeur du block dont ils parlent??? 
+    /*width: 1200px;   Est-ce que c'est juste ça la largeur du block dont ils parlent??? 
 J'espère pas, sinon je vais devoir tout modifier*/
 }
 
@@ -18,23 +18,25 @@ header {
 
 #logovg {
     height: 110px;
+    margin-left: 100px;
 }
 
-header a {
+.bandeau a {
     text-decoration: none;
     color: black;
     margin-left: 40px;
 
 }
 
-header nav {
+.bandeau {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 120px;
+    position: sticky;   /*fixer à toute la page?*/
+    top: 0px;
+    background-color: #ecebf0;
+    padding-bottom: 20px;
 }
 
 header div {
@@ -42,7 +44,7 @@ header div {
     margin-bottom: px;
 }
 
-header nav :hover {
+.bandeau div :hover {
     color: #43960f;
 }
 
@@ -187,7 +189,7 @@ tout cela soit fixé au fond d'écran */
 .temoignage {
     display: flex;
     margin: 0px px 100px 80px;
-    height: 950px;
+    
 }
 
 .temoignage h1 {
@@ -200,6 +202,8 @@ tout cela soit fixé au fond d'écran */
 
 #chou {
     background-image: url("test2.png");
+    width: auto;
+    height: 977px;
 }
 
 .conteneur_portrait {
