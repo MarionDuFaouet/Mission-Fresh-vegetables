@@ -4,7 +4,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-
+/* width: 1200px;    Est-ce que c'est juste ça la largeur du block dont ils parlent??? 
+J'espère pas, sinon je vais devoir tout modifier*/
 }
 
 header {
@@ -22,7 +23,6 @@ header {
 header a {
     text-decoration: none;
     color: black;
-    
     margin-left: 40px;
 
 }
@@ -56,7 +56,6 @@ header nav :hover {
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 50px;
-    /*pourquoi ça ne veut pas se mettre en gras?!*/
 }
 
 .accueil {
@@ -76,13 +75,11 @@ header nav :hover {
 .accueil div {
     flex-direction: column;
     margin-left: 60px;
-    /*comment les aligner à gauche?*/
 }
 
 .accueil p {
     font-size: 1.2em;
     font-weight: 500;
-    /*graisse à revoir*/
 }
 
 
@@ -154,46 +151,34 @@ header nav :hover {
 .conteneur_fresh {
     display: flex;
     margin: 0px 80px 100px 80px;
-    height: 700px;
-    /*mes elements flex ne dépassent pas, mais je ne pense pas que ce soit la mailleure méthode */
-    justify-content: space-between;
-    position: relative;
+    height: 700px;/*mes elements flex ne dépassent pas, mais pas sûre que ce soit la mailleure méthode */
+    flex-direction: row;
 }
 
 .textfv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
+    /* position: absolute;
     right: 0px;
-    top: 0px;
-    align-items: flex-start;
-    /* flex-grow: 1;
-    flex-basis: auto;    pour adapter le texte à l'espace vide?*/
-
+    top: 0px;*/
 }
 
 .panier {
     display: flex;
-    position: absolute;
+    /* position: absolute;   
     right: 0px;
     top: 0px;
-    z-index: 1;
-    justify-content: flex-start;
-    align-items: flex-end;
-    /*aligné en haut à droite*/
-
+    z-index: 1;    pourquoi mes éléments absolu se réfèrent à ma page et non à mon conteneur? */
 }
 
 .hiver {
     height: 410px;
     display: flex;
-    position: absolute;
+    /* position: absolute; 
     left: 0px;
     bottom: 0px;
-    z-index: 2;
-    justify-content: flex-end;
-    align-items: flex-start;
+    z-index: 2;*/
 }
 
 
@@ -217,7 +202,7 @@ tout cela soit fixé au fond d'écran */
     background-image: url("test2.png");
 }
 
-#conteneur_portrait {
+.conteneur_portrait {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -230,24 +215,20 @@ tout cela soit fixé au fond d'écran */
     margin-top: 10px;
 }
 
-#avis {
+.avis {
     color: #fff;
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.1em;
 }
 
-#conteneur_vert {
+.conteneur_vert {
     display: flex;
     display: inline-block;
     flex-direction: row;
-    position: relative;
     background-color: rgba(67, 150, 15, 0.8);
 }
-
-
 
 
 
@@ -372,6 +353,7 @@ footer a {
     grid-column: 3/4;
     grid-row: 3/4;
     /* déplacer dans la cellule */
+    /* justify-content: space-evenly; ?*/
 }
 
 .inscription {
