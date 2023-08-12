@@ -158,6 +158,7 @@
             <h1 id="contact">NOUS <span>CONTACTER</span></h1>
 
             <div>
+                <!-- utiliser plutot grid que flex? -->
                 <form method="get" action="" class="form_style">
                     <input type="text" name="nom" size="" placeholder="Votre nom">
 
@@ -165,11 +166,11 @@
                     <input type="tel" name="tel" placeholder="Téléphone">
 
                     <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                
-                
+
+
                     <input type="submit" value="Envoyer" class="envoyer">
                 </form>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.
             3729882320295!2d-2.3584127245727258!3d47.579986789816196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f
             13.1!3m3!1m2!1s0x480ff2a998ee6033%3A0x74f0759d81ee6f87!2s5%20Rue%20du%20Calvaire%2C%2056130%20P
             %C3%A9aule!5e0!3m2!1sfr!2sfr!4v1691225781725!5m2!1sfr!2sfr" width="600" height="550" style="border:0
@@ -182,32 +183,50 @@
 
 
     <footer>
-        <div class="footer">
-        <!-- grid 5 colonnes, appliquer un div à chaque élément-->
-        <div class="box2"><img src="images/fresh-vegetables.png" alt="logo fresh vegetable" id="logovg"></div>
-        <h2>Adresse</h2>
-        <p>ZA des blés noirs <br>
-            (+71 1234567890) <br>
-            fresh@gmail.com</p>
+        <div class="footer_grid">
+            <!-- grid 3 colonnes et 4 rangs, appliquer un div à chaque élément-->
 
-        <h2>Nous suivre</h2> <!--télécharger les logo et les redimensionner-->
-        <img src="images/logotwitter.png" alt="Logo Twitter" class="icones">
-        <a target="_blank" href="https://twitter.com">Twitter</a>
-        <img src="images/logofb.png" alt="Logo Facebook" class="icones">
-        <a target="_blank" href="https://facebook.com">Facebook</a>
-        <img src="images/logoinsta.png" alt="Logo instagram" class="icones">
-        <a target="_blank" href="https://instagram.com">Instagram</a>
-        <img src="images/logolinkedin.png" alt="Logo Linkedin" class="icones">
-        <a target="_blank" href="https://linkedin.com">Linkedin</a>
+            <div class="g1">
+                <img src="images/fresh-vegetables.png" alt="logo fresh vegetable" id="logovg">
+            </div>
 
+            <div class="g4">
+                <h2>Adresse</h2>
+            </div>
 
-        <h2>Newsletter</h2>
-        <form method="get" action="">
-            <input type="email" name="email" placeholder="Tapez votre email">
-            <input type="submit" value="S'INSCRIRE" class="inscription">
-        </form>
-        <p class="copyright">Copyright &copy 2023 Greta Bretagne Sud - Exercice CDUI</p>
-    </div>
+            <div class="g7">
+                <p>ZA des blés noirs <br>
+                    (+71 1234567890) <br>
+                    fresh@gmail.com</p>
+            </div>
+
+            <div class="g5">
+                <h2>Nous suivre</h2>
+            </div> <!--télécharger les logo et les redimensionner-->
+
+            <div class="g8">
+                <a target="_blank" href="https://twitter.com">Twitter</a><br>
+                <a target="_blank" href="https://facebook.com">facebook</a><br>
+                <a target="_blank" href="https://instagram.com">Instagram</a><br>
+                <a target="_blank" href="https://linkedin.com">Linkedin</a>
+            </div>
+
+            <div class="g6">
+                <h2>Newsletter</h2>
+            </div>
+
+            <div class="g9">
+                <form method="get" action="">
+                    <input type="email" name="email" placeholder="Tapez votre email">
+                    <input type="submit" value="S'INSCRIRE" class="inscription">
+                </form>
+            </div>
+
+            <div class="g10">
+                <p class="copyright">Copyright &copy 2023 Greta Bretagne Sud - Exercice CDUI</p>
+            </div>
+
+        </div>
     </footer>
 
     <!--block copyright, comment le placer? dans le footer? après?-->
