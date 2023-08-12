@@ -31,7 +31,6 @@
             </div>
         </nav>
 
-
         <section class="accueil">
             <div>
                 <h1 class="titre_noir">Bienvenue chez Fresh
@@ -81,30 +80,33 @@
 
         <section class="fresh-vegetable">
             <h1 id="fresh_vegetable">FRESH <span>VEGETABLE</span></h1>
-            <div class="conteneur_fresh"> <!--flexbox-->
-                <div class="textfv">
+            <div class="conteneur_fresh"> <!-- parent flexbox-->
+                <div class="textfv"> <!-- enfant -->
                     <h2>Meilleur "Vegetables Shop"</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi velit possimus. Laboriosam
                         ullam
                         similique ea amet odit rerum at incidunt reprehenderit temporibus quod perferendis aliquam eos,
                         reiciendis officia sequi repellendus est magnam delectus id non saepe in. Nulla, aperiam
                         molestias?
-                        Accusamus, temporibus fugit commodi quisquam ullam magnam voluptate, 
+                        Accusamus, temporibus fugit commodi quisquam ullam magnam voluptate,
                         laudantium deserunt facilis aut ducimus, illum id ad quia odio odit.</p>
                 </div>
-                <img src="images/v1.jpg" class="panier" alt="Panier de légumes">
-                <img src="images/v2.jpg" class="hiver" alt="Légumes d'hiver">
-            </div>
+                <div class="panier"> <!-- enfant -->
+                    <img src="images/v1.jpg" alt="Panier de légumes">
+                </div>
+                <div class="hiver"><!--enfant-->
+                    <img src="images/v2.jpg" alt="Légumes d'hiver">
+                </div>
             </div>
         </section>
 
 
 
-        <section class="temoignage"><!-- créer un slide avec autres témoignages . tout est à revoir -->
+        <section class="temoignage"><!-- créer un slider avec autres témoignages. -->
             <div id="chou">
                 <h1 id="temoignage_titre">TÉMOIGNAGES</h1>
-                <div id="conteneur_vert">
-                    <div id="avis">
+                <div class="conteneur_vert">
+                    <div class="avis">
                         <h2>Joahna</h2>
                         <p>Son avis</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum quam
@@ -115,8 +117,8 @@
                             dolorum
                             totam suscipit.</p>
                     </div>
-                    <div id="conteneur_portrait">
-                        <img src="images/tes2.jpg" alt="Portrait de cliente" id="tes2">
+                    <div class="conteneur_portrait">
+                        <img src="images/tes2.jpg" alt="Portrait de cliente">
                         <img src="images/test_con.png" alt="guillemets" id="guillemets">
                     </div>
                 </div>
@@ -124,7 +126,8 @@
 
 
 
-            <!--<h3>Jeanne</h3>
+            <!-- éléments du slider
+                <h3>Jeanne</h3>
                 <p>Son avis</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea
                     natus vero
@@ -155,18 +158,13 @@
         <section class="contact" id="banner">
 
             <h1 id="contact">NOUS <span>CONTACTER</span></h1>
-
             <div>
-                <!-- utiliser plutot grid que flex? En tous les cas c'est à revoir-->
+                <!-- utiliser plutot grid que flex? En tous les cas c'est à revoir, ça se comporte très mal quand je réduis ma fenêtre-->
                 <form method="get" action="" class="form_style">
                     <input type="text" name="nom" size="" placeholder="Votre nom">
-
                     <input type="email" name="email" placeholder="Votre mail">
                     <input type="tel" name="tel" placeholder="Téléphone">
-
                     <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-
                     <input type="submit" value="Envoyer" class="envoyer">
                 </form>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.
@@ -182,43 +180,43 @@
 
 
     <footer class="footer_grid">
-        
-            <div class="g1">
-                <img src="images/fresh-vegetables.png" alt="logo fresh vegetable" id="logovg">
-            </div>
 
-            <div class="g4">
-                <h2>Adresse</h2>
-            </div>
+        <div class="g1">
+            <img src="images/fresh-vegetables.png" alt="logo fresh vegetable" id="logovg">
+        </div>
 
-            <div class="g7">
-                <p>ZA des blés noirs <br>
-                    (+71 1234567890) <br>
-                    fresh@gmail.com</p>
-            </div>
+        <div class="g4">
+            <h2>Adresse</h2>
+        </div>
 
-            <div class="g5">
-                <h2>Nous suivre</h2>
-            </div> <!--télécharger les logo et les redimensionner-->
+        <div class="g7">
+            <p>ZA des blés noirs <br>
+                (+71 1234567890) <br>
+                fresh@gmail.com</p>
+        </div>
 
-            <div class="g8">
-                <a target="_blank" href="https://twitter.com">Twitter</a><br>
-                <a target="_blank" href="https://facebook.com">Facebook</a><br>
-                <a target="_blank" href="https://instagram.com">Instagram</a><br>
-                <a target="_blank" href="https://linkedin.com">Linkedin</a>
-            </div>
+        <div class="g5">
+            <h2>Nous suivre</h2>
+        </div> <!--télécharger les logo et les redimensionner. Remplacer le texte par le lien img ou png-->
 
-            <div class="g6">
-                <h2>Newsletter</h2>
-            </div>
+        <div class="g8">
+            <a target="_blank" href="https://twitter.com">Twitter</a><br>
+            <a target="_blank" href="https://facebook.com">Facebook</a><br>
+            <a target="_blank" href="https://instagram.com">Instagram</a><br>
+            <a target="_blank" href="https://linkedin.com">Linkedin</a>
+        </div>
 
-            <div class="g9">
-                <form method="get" action="">
-                    <input type="email" name="email" placeholder="Tapez votre email" class="footer_form">
-                    <input type="submit" value="S'INSCRIRE" class="inscription">
-                </form>
-            </div>
-        
+        <div class="g6">
+            <h2>Newsletter</h2>
+        </div>
+
+        <div class="g9">
+            <form method="get" action="">
+                <input type="email" name="email" placeholder="Tapez votre email" class="footer_form">
+                <input type="submit" value="S'INSCRIRE" class="inscription">
+            </form>
+        </div>
+
     </footer>
     <p class="copyright">Copyright &copy 2023 Greta Bretagne Sud - Exercice CDUI</p>
 
