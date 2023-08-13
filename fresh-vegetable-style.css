@@ -182,9 +182,6 @@ header div {
     right: 0px;
     top: 0px;
 }
-.textfv p{
-    /*display: inline;   comment faire pour que le texte s'arrète avant l'image? */
-}
 
 .panier {
    position: absolute;   
@@ -206,56 +203,58 @@ header div {
 }
 
 
-/*Je n'arrive pas à fixer le conteneur portrait au conteneur vert, et je ne suis meme pas sure que 
-tout cela soit fixé au fond d'écran     absolute, pour avoir plusieurs couches*/
-.temoignage { 
-    height: 1000px;
-    margin-bottom: 150px;
-    
-}
-
 .conteneur_temoignage h1 {
     text-align: right;
     font-weight: bold;
     font-size: 2.8em;
+    position: absolute;
+    right: 0px;
 }
 
 .conteneur_temoignage {
     background-image: url("test2.png");
-    width: 1200px;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    padding: px;
     position: relative;
 }
 
+
 .conteneur_portrait {
-    
-    position: absolute; 
     background-color: #fff;
-    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: baseline;
+    padding: 15px;
+    justify-content: space-around;
 }
 
-#guillemets {
-    justify-content: center;
-    margin-top: 10px;
-    width: 47px;
+.conteneur_vert {
+    background-color: rgba(67, 150, 15, 0.8);
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    position: absolute;
+    right: 0px;
+    margin: 200px 100px 400px 100px;
+}
+
+#guillemets{
+    align-self: center;
+    margin-top: 15px;
 }
 
 .avis {
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     font-size: 1.1em;
+    margin: 30px 40px;
+    align-self: center;
+    padding: 20px;
 }
 
-.conteneur_vert {
-    display: flex;
-    display: inline-block;
-    flex-direction: row;
-    background-color: rgba(67, 150, 15, 0.8);
-}
+
+
 
 
 
