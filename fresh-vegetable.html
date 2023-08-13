@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200px, initial-scale=1.0">  <!--j'ai remplacé device-width par width=1200px-->
+    <meta name="viewport" content="width=1200px, initial-scale=1.0"> <!--j'ai remplacé device-width par width=1200px-->
     <title>Fresh vegetable</title>
     <link rel="stylesheet" href="fresh-vegetable-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,10 @@
 </head>
 
 
-
-
-
 <body>
 
-
     <nav class="menu">
-        
+
         <img src="images/fresh-vegetables.png" alt="Logo Fresh vegetable" id="logovg">
         <div>
             <a href="#accueil">Accueil</a>
@@ -35,7 +31,7 @@
 
     <header>
 
-        <section class="accueil"id="accueil">
+        <section class="accueil" id="accueil">
             <div>
                 <h1 class="titre_noir">Bienvenue chez Fresh
                     Vegetables</h1>
@@ -56,7 +52,7 @@
 
     <main>
 
-        <section class="a-propos_cadre" id="a_propos" >
+        <section class="a-propos_cadre" id="a_propos">
             <div>
                 <h1 id="a_propos_titre">A PROPOS</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
@@ -77,7 +73,7 @@
             </div>
             <img src="images/about.jpg" alt="Légumes d'été" id="img_a_propos">
         </section>
-        <!--N'apparait pas sur la maquette jpg?!<img src="images/crros.png" alt="encart vert" id="encart vert">-->
+        <!--N'apparait pas sur la maquette?!<img src="images/crros.png" alt="encart vert" id="encart vert">-->
 
 
 
@@ -98,7 +94,7 @@
                     <img src="images/v1.jpg" alt="Panier de légumes">
                 </div>
                 <div class="hiver"><!--enfant-->
-                    <img src="images/v2.jpg" alt="Légumes d'hiver">
+                    <img src="images/v2.jpg" alt="Légumes d'hiver" id="hiver">
                 </div>
             </div>
         </section>
@@ -106,7 +102,7 @@
 
 
         <section class="temoignage" id="temoignage"><!-- créer un slider avec autres témoignages. -->
-            <div id="chou">
+            <div class="conteneur_temoignage">
                 <h1 id="temoignage_titre">TÉMOIGNAGES</h1>
                 <div class="conteneur_vert">
                     <div class="avis">
@@ -148,13 +144,14 @@
                 <img src="images/test_con.png" alt="guillemets">
 
 
-            </div>
-            <div class="cont-btn">
+                </div>
+                <div class="cont-btn">
                 <div class="btn-nav left">°</div>
                 <div class="btn-nav center">°</div>
                 <div class="btn-nav right">°</div>
             </div>-->
-            <!--<img src="images/test2.png" alt="Légumes verts">-->
+
+            <img src="images/test2.png" alt="Légumes verts">
         </section>
 
 
@@ -162,7 +159,8 @@
 
             <h1 id="contact">NOUS <span>CONTACTER</span></h1>
             <div>
-                <!-- utiliser plutot grid que flex? En tous les cas c'est à revoir, ça se comporte très mal quand je réduis ma fenêtre-->
+                <!--utiliser plutot grid que flex? En tous les cas c'est à revoir, ça se comporte 
+                très mal quand je réduis ma fenêtre-->
                 <form method="get" action="" class="form_style">
                     <input type="text" name="nom" size="" placeholder="Votre nom">
                     <input type="email" name="email" placeholder="Votre mail">
@@ -200,15 +198,15 @@
 
         <div class="g5">
             <h2>Nous suivre</h2>
-        </div> <!--télécharger les logo et les redimensionner. Remplacer le texte par le lien img ou png-->
+        </div>
 
         <div class="g8">
             <a target="_blank" href="http://twitter.com/">
-            <img src="images/logo_twitter.png" alt="Lien Twitter"> </a>
+                <img src="images/logo_twitter.png" alt="Lien Twitter"> </a>
             <a target="_blank" href="https://facebook.com/">
-            <img src="images/logo_fb.png" alt="Lien Facebook"></a><br>
+                <img src="images/logo_fb.png" alt="Lien Facebook"></a><br>
             <a target="_blank" href="https://instagram.com/">
-            <img src="images/logo_insta.png" alt="Lien Instagram"></a>
+                <img src="images/logo_insta.png" alt="Lien Instagram"></a>
             <a target="_blank" href="https://linkedin.com/">
                 <img src="images/logo_link.png" alt="Lien Linkedin"></a>
         </div>

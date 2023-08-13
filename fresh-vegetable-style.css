@@ -25,6 +25,7 @@ body {
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    z-index: 6;
     background-color: #ecebf0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -150,6 +151,10 @@ header div {
     margin-bottom: 50px;
 }
 
+.fresh-vegetable{
+    height: 1000px;
+}
+
 .fresh-vegetable span {
     color: #43960f;
 }
@@ -166,72 +171,75 @@ header div {
 }
 
 .conteneur_fresh {
-    display: flex;
     margin: 0px 80px 100px 80px;
-
-    flex-direction: row;
+    position: relative;
+   /*  display: flex;comment faire pour que le texte s'arrète avant l'image? 
+    justify-content: space-between;*/
 }
 
 .textfv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* position: absolute;
+    position: absolute;
     right: 0px;
-    top: 0px;*/
+    top: 0px;
+}
+.textfv p{
+    /*display: inline;   comment faire pour que le texte s'arrète avant l'image? */
 }
 
 .panier {
-    display: flex;
-    /* position: absolute;   
+   position: absolute;   
     right: 0px;
     top: 0px;
-    z-index: 1;    pourquoi mes éléments absolu se réfèrent à ma page et non à mon conteneur? */
+    z-index: 1;
 }
 
 .hiver {
-    height: 410px;
-    display: flex;
-    /* position: absolute; 
+    
+    position: absolute; 
     left: 0px;
-    bottom: 0px;
-    z-index: 2;*/
+    top: 350px;
+    z-index: 2;
+}
+
+#hiver{
+    width: 112%;
 }
 
 
-/* Je n'arrive pas à fixer le conteneur portrait au conteneur vert, et je ne suis meme pas sure que 
-tout cela soit fixé au fond d'écran */
-.temoignage {
-    display: flex;
-    margin: 0px px 100px 80px;
+/*Je n'arrive pas à fixer le conteneur portrait au conteneur vert, et je ne suis meme pas sure que 
+tout cela soit fixé au fond d'écran     absolute, pour avoir plusieurs couches*/
+.temoignage { 
+    height: 1000px;
+    margin-bottom: 150px;
     
 }
 
-.temoignage h1 {
-    display: flex;
-    justify-content: flex-end;
+.conteneur_temoignage h1 {
     text-align: right;
     font-weight: bold;
     font-size: 2.8em;
 }
 
-#chou {
+.conteneur_temoignage {
     background-image: url("test2.png");
-    width: auto;
-    height: 977px;
+    width: 1200px;
+    position: relative;
 }
 
 .conteneur_portrait {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+    
+    position: absolute; 
     background-color: #fff;
     padding: 15px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #guillemets {
+    justify-content: center;
     margin-top: 10px;
+    width: 47px;
 }
 
 .avis {
@@ -253,7 +261,6 @@ tout cela soit fixé au fond d'écran */
 
 
 .contact {
-
     margin: 0px px 100px 80px;
     height: 700px;
 }
