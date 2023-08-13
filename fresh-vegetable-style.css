@@ -291,12 +291,12 @@ header div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* comment ajouter des espaces entre les entrées? */
-    margin: 50px 0px 5px 15px;
+    margin: 35px 0px 5px 15px;
     padding: 5px;
 }
 
 #bouton_submit{
+    /* wtf? */
     display: flex;
     display: inline-block;
     border: none;
@@ -307,11 +307,12 @@ header div {
 
 .form_style input,
 textarea {
-    /* leur appliquer une propriété pour occuper tout l'espace disponible horizontalement */
+    display: flex;
+    margin-top: 20px;
     padding: 5px;
     border: 0.5px #ecebf0 solid;
     font-family: Poppins;
-    /* margin: 0; j'essaie de centrer verticalement */
+    /* comment réduire la taille du text area */
 } 
 
 
