@@ -206,7 +206,7 @@ header div {
 .conteneur_temoignage h1 {
     text-align: right;
     font-weight: bold;
-    font-size: 2.8em;
+    font-size: 3em;
     position: absolute;
     right: 0px;
 }
@@ -219,7 +219,6 @@ header div {
     padding: px;
     position: relative;
 }
-
 
 .conteneur_portrait {
     background-color: #fff;
@@ -278,7 +277,7 @@ header div {
     color: #43960f;
 }
 
-.contact div {   /* à revoir */
+.cadre_form {   /* à revoir */
     background-color: #fff;
     margin: 50px 100px 50px 100px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -288,11 +287,22 @@ header div {
 
 }
 
-form {
+.form_style {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 30px 0px 30px 5px;
+    /* comment ajouter des espaces entre les entrées? */
+    margin: 50px 0px 5px 15px;
+    padding: 5px;
+}
+
+#bouton_submit{
+    display: flex;
+    display: inline-block;
+    border: none;
+    background: #43960f;
+    align-self: flex-end;
+    color: #fff;
 }
 
 .form_style input,
@@ -302,18 +312,7 @@ textarea {
     border: 0.5px #ecebf0 solid;
     font-family: Poppins;
     /* margin: 0; j'essaie de centrer verticalement */
-}
-
-
-.envoyer {
-    /* détacher du formulaire pour aligner à droite, ajuster padding et margin*/
-    color: #fff;
-    border: none;
-    background: #43960f;
-    padding: 10px 25px 10px 25px;
-}
-
-
+} 
 
 
 
@@ -380,12 +379,9 @@ footer a {
 .g9 {
     grid-column: 3/4;
     grid-row: 3/4;
-    /* déplacer dans la cellule */
-    /* justify-content: space-evenly; ?*/
 }
 
 .inscription {
-    /* comment faire pour que le bouton s'adapte au texte et non à la cellule? */
     background: #43960f;
     color: #fff;
     border-radius: 50px;
