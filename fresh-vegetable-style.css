@@ -2,51 +2,55 @@
     margin: 0;
 }
 
+html{
+    width:100%;   /*est-ce bien nécessaire? */
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    /*width: 1200px;   Est-ce que c'est juste ça la largeur du block dont ils parlent??? 
-J'espère pas, sinon je vais devoir tout modifier*/
+    width: 100%;   /*Est-ce que c'est juste ça la largeur du block dont ils parlent???*/
 }
 
-header {
-    background-color: #ecebf0;
-    display: inline-block;
+.menu a {
     text-decoration: none;
+    color: black;
+    padding-right: 55px;
 }
 
-
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: #ecebf0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 #logovg {
     height: 110px;
     margin-left: 100px;
 }
 
-.bandeau a {
-    text-decoration: none;
-    color: black;
-    margin-left: 40px;
-
+.menu div :hover {
+    color: #43960f;
 }
 
-.bandeau {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;   /*fixer à toute la page?*/
-    top: 0px;
+header {
     background-color: #ecebf0;
-    padding-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 50px;
 }
 
 header div {
-    margin-right: 100px;
+    
     margin-bottom: px;
 }
 
-.bandeau div :hover {
-    color: #43960f;
-}
+
 
 .titre_noir {
     font-size: 40px;
