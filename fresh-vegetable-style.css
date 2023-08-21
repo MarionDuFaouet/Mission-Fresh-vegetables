@@ -2,17 +2,30 @@
     margin: 0;
 }
 
-html{
-    width:100%;   /*est-ce bien nécessaire? */
+html {
+    width: 100%;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.inscription,
+.footer_form,
+input,
+textarea,
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    width: 100%;   /*Est-ce que c'est juste ça la largeur du block dont ils parlent???*/
+    width: 100%;
 }
 
-.menu a {    /* pb de recouvrement des sections quand je clique sur les liens. 
-            Dois-je fixer mes ancres à la fin des sections précédente, ou modifier mon menu? */
+.menu a {
     text-decoration: none;
     color: black;
     padding-right: 55px;
@@ -23,24 +36,33 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0px;
-    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 1;
     background-color: #ecebf0;
     padding-top: 20px;
     padding-bottom: 20px;
+    transform: translateX(-50%);     /*Je ne comprends pas ce que ça veut dire */
+    width: 100%;
+    max-width: 1200px;
 }
 
-#logovg {
+
+/* Pourquoi il ya ces deux selecteurs? */
+.logo {
     height: 100px;
-    margin-left: 100px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
 }
 
 
 
-.g8 a{
-    color: #fff;
-}
+
+
 
 
 
@@ -50,16 +72,9 @@ body {
 
 header {
     background-color: #ecebf0;
-    display: inline-block;
     text-decoration: none;
-    padding-top: 110px;   
+    position: relative;
 }
-
-header div {
-    
-    margin-bottom: px;
-}
-
 
 
 .titre_noir {
@@ -82,6 +97,13 @@ header div {
     padding-right: 100px;
     margin-bottom: 120px;
     align-items: center;
+    padding-top: 240px;
+    position: relative;
+}
+
+.accueil .marker{
+    position: absolute;
+    top: -140px;
 }
 
 .accueil img {
@@ -93,14 +115,22 @@ header div {
     margin-left: 60px;
 }
 
-.accueil p {
+.cadre_form p {
     font-size: 1.2em;
     font-weight: 500;
 }
 
 
+/* À PROPOS */
+.marker{
+    position: absolute;
+    top: -140px;
+}
 
-
+.a-propos_cadre{
+    height: 580px;
+    position: relative;
+}
 #img_a_propos {
     height: 470px;
 }
@@ -114,6 +144,10 @@ header div {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding-bottom: 50px;
     padding-left: 60px;
+}
+
+.a-propos_cadre div{
+    flex-direction: column;
 }
 
 .a-propos_cadre a {
@@ -144,22 +178,45 @@ header div {
 }
 
 
-
+/* FRESH VEGETABLE */
 #fresh_vegetable {
     text-align: center;
     font-size: 3em;
     margin-bottom: 50px;
+    font-weight: 700;
 }
 
-.fresh-vegetable{
+.fresh-vegetable {
     height: 1000px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.fresh-vegetable.marker{
+    position: absolute;
+    top: -140px;
+}
+
+.conteneur_fresh .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fresh-vegetable .textfv {
+    max-width: 40%;
+    flex: 0 0 40%;
+}
+
+.fresh-vegetable .panier {
+    max-width: 56%;
+    flex: 0 0 56%;
 }
 
 .fresh-vegetable span {
     color: #43960f;
 }
 
-.fresh-vegetable p{
+.fresh-vegetable p {
     font-size: 1.1em;
     font-weight: 200;
 }
@@ -170,40 +227,54 @@ header div {
     font-weight: 500;
 }
 
-.conteneur_fresh {
-    margin: 0px 80px 100px 80px;
-    position: relative;
-   /*  display: flex;comment faire pour que le texte s'arrète avant l'image? 
-    justify-content: space-between;*/
+.fresh-vegetable h3{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
-.textfv {
+.conteneur_fresh span {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: -25px;
+    top: 50%;
+    background-color: #43960f;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.panier {
-   position: absolute;   
-    right: 0px;
-    top: 0px;
-    z-index: 1;
+.panier,
+.hiver {
+    position: relative;
 }
 
 .hiver {
-    
-    position: absolute; 
-    left: 0px;
-    top: 350px;
-    z-index: 2;
+    width: 60%;
+    margin-top: -5%;
 }
 
-#hiver{
-    width: 112%;
+.panier img,
+.hiver img {
+    width: 100%;
 }
 
+/* TEMOIGNAGES */
+#temoignage {
+    background-image: url("images/test2.png");
+}
 
-.conteneur_temoignage h1 {
+.marker{
+    position: absolute;
+    top: -140px;
+}
+
+.conteneur_temoignage h2 {
     text-align: right;
     font-weight: bold;
     font-size: 3em;
@@ -212,11 +283,10 @@ header div {
 }
 
 .conteneur_temoignage {
-    background-image: url("test2.png");
+
     height: 950px;
     display: flex;
     flex-direction: column;
-    padding: px;
     position: relative;
 }
 
@@ -236,10 +306,10 @@ header div {
     padding: 50px;
     position: absolute;
     right: 0px;
-    margin: 200px 100px 400px 100px;
+    margin: 200px 100px 150px 100px;
 }
 
-#guillemets{
+#guillemets {
     align-self: center;
     margin-top: 15px;
 }
@@ -252,23 +322,31 @@ header div {
     padding: 20px;
 }
 
-
-
-
-
-
-
-.contact {
-    margin: 0px px 100px 80px;
-    height: 700px;
+.avis_text {
+    margin-bottom: 5%;
 }
 
-#banner {
-    background-image: url("banner2.png");
+
+
+
+
+/* CONTACT */
+.f_contact {
+    margin: 0px 0px 100px 80px;
+    height: 700px;
+    position: relative;
+}
+
+.marker{
+    position: absolute;
+    top: -140px;     /*pourquoi ça ne fonctionne pas?*/
+}
+#contact {
+    background-image: url("images/banner2.png");
     background-size: cover;
 }
 
-#contact {
+#contact_head {
     text-align: center;
     font-size: 2.8em;
 }
@@ -277,7 +355,7 @@ header div {
     color: #43960f;
 }
 
-.cadre_form {   /* à revoir */
+.cadre_form {
     background-color: #fff;
     margin: 50px 100px 50px 100px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -295,32 +373,52 @@ header div {
     padding: 5px;
 }
 
-#bouton_submit{
-    /* wtf? */
+#bouton_submit {
     display: flex;
-    display: inline-block;
-    border: none;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+#bouton_submit input {
     background: #43960f;
-    align-self: flex-end;
     color: #fff;
+    padding: 15px 50px;
 }
 
 .form_style input,
 textarea {
-    display: flex;
     margin-top: 20px;
-    padding: 5px;
     border: 0.5px #ecebf0 solid;
-    font-family: Poppins;
-    /* comment réduire la taille du text area */
-} 
+}
 
+.form_style input {
+    padding: 10px 15px;
+}
 
+textarea {
+    padding-left: 10px;
+    height: 120px;
+    line-height: 120px;
+}
 
+input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid #43960f;
+}
+
+#bouton_submit input[type="submit"]:hover,
+input[type="submit"]:hover {
+    background: #fff;
+    color: #43960f;
+}
+
+/* FOOTER */
 footer {
     color: #fff;
     background-color: #3b3b3b;
     font-weight: 300;
+    display: flex;
+    flex-direction: column;
 }
 
 footer a {
@@ -331,11 +429,15 @@ footer a {
 
 
 .footer_grid {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 50px 1fr;
     font-size: 1.2em;
+    padding-bottom: 50px;
 }
+
+
 
 .footer_grid div {
     margin-left: 50px;
@@ -343,6 +445,7 @@ footer a {
 }
 
 .g1 {
+    
     grid-column: 1/3;
     grid-row: 1/2;
     margin-top: 50px;
@@ -374,12 +477,25 @@ footer a {
     grid-column: 2/3;
     grid-row: 3/4;
     padding: 5px;
-    /* changer l'espacement entre les icones? */
+}
+
+.g8 a {
+    color: #fff;
 }
 
 .g9 {
     grid-column: 3/4;
     grid-row: 3/4;
+}
+
+footer .g1 {
+    width: 160px;
+    height: 100px;
+}
+
+footer .g1 img {
+    width: 100%;
+    height: auto;
 }
 
 .inscription {
@@ -388,19 +504,17 @@ footer a {
     border-radius: 50px;
     padding: 9px 25px;
     border: none;
-    font-family: poppins;
     font-size: 1em;
     margin-top: 0;
 }
 
-.footer_form{
+.footer_form {
     margin: 20px 20px 20px 0px;
     padding: 10px;
     font-size: 1em;
-    font-family: poppins;
 }
 
-.copyright {
+.copyright p {
     color: #fff;
     background-color: #43960f;
     text-align: center;
@@ -410,3 +524,23 @@ footer a {
     font-weight: 200;
     font-size: 1.15em;
 }
+
+/* @media screen and (min-width: 200px) and (max-width: 640px) {
+
+
+} */
+@media screen and (max-width: 1024px) {
+    .jensaisrien {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+
+
+}
+
+/*
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+https://autoprefixer.github.io/
+*/
