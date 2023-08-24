@@ -7,8 +7,7 @@ Mes questions à ce jour sont :
 
 - Mon slider section accueil, ma feuille js semble ne pas s'appliquer. Est-ce que le soucis vient de mon ordi, d'une sécurité quelconque? C'est ce que semble dire la console:
   "Échec du chargement pour l’élément <script> dont la source est « file:///C:/Users/lenovo/Desktop/OBJECTIF%20KERCODE%202023/VSC/Fresh%20vegetables/fresh-vegetable.js.1 »"
-  J'attends d'avoir réglé ça pour tenter de replacer correctement mon image  ...
 
-- Mon slider section témoignage, j'aimerais que mes textes .avis se comporte comme les images. Et pourquoi pas, ajouter des dot.
+- Mon slider section témoignage, j'aimerais que mes textes .avis se comportent comme les images. Et pourquoi pas, ajouter des dot.
 
 Merci par avance du temps que tu pourra accorder à mon exercice :)
