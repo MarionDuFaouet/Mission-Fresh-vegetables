@@ -10,6 +10,6 @@ Mes questions à ce jour sont :
     showSlides file:///C:/Users/lenovo/Desktop/OBJECTIF KERCODE 2023/VSC/Fresh vegetables/fresh-vegetablejs.js:16
     <anonymous> file:///C:/Users/lenovo/Desktop/OBJECTIF KERCODE 2023/VSC/Fresh vegetables/fresh-vegetablejs.js:2
 
-- Mon slider section témoignage, j'aimerais que mes textes .avis se comportent comme les images. Et pourquoi pas, ajouter des dot.
+- Mon slider section témoignage, j'aimerais que mes textes .avis se comportent comme les images, mais je ne vois pas comment appliquer le @keyframe à mes texte.
 
 Merci par avance du temps que tu pourra accorder à mon exercice :)
