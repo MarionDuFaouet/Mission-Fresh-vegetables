@@ -57,12 +57,12 @@ body {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    left: 50%;
+    /* left: 50%; */
     z-index: 1;
     background-color: #ecebf0;
     padding-top: 20px;
     padding-bottom: 20px;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     width: 100%;
     max-width: 1200px;
 }
@@ -113,7 +113,7 @@ header {
 }
 
 .text {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     width: 50%;
 }
@@ -140,7 +140,7 @@ header {
     transform: translateX(45%);
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/3 etc) sont-ils nécessaires, servent-ils au JS?*/
 .numbertext {
     color: black;
     position: absolute;
@@ -231,9 +231,9 @@ header {
 }
 
 .fresh-vegetable {
-    height: 1000px;
+    /* height: 1000px; */
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .conteneur_fresh .row {
@@ -336,7 +336,7 @@ header {
     background-color: rgba(67, 150, 15, 0.8);
     display: flex;
     flex-direction: row;
-    padding: 30px 20px 30px 20px;
+    padding: 30px 20px;
     position: absolute;
     right: 0px;
     margin: 150px;
@@ -349,6 +349,7 @@ header {
     background-size: contain;
     animation: fondu 10s ease-in-out infinite both;
 }
+
 .conteneur_avis {
     width: 100%;
     animation: fondu 10s ease-in-out infinite both;
@@ -413,7 +414,7 @@ header {
     font-size: 1.1em;
     margin: 30px 40px;
     padding: 20px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 /* CONTACT------------------------------------------------------------------------------------------------------ */
@@ -436,7 +437,8 @@ header {
 
 .cadre_form {
     background-color: #fff;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 100px 50px 100px;   
+    /* marges du cadre entier */
     box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     display: flex;
     flex-direction: row;
@@ -452,14 +454,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 35px 0px 5px 15px;
+    margin: 35px 0px 0px 15px;
     padding: 5px;
 }
 
 #bouton_submit {
     display: flex;
     justify-content: flex-end;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-right: 0px;
 }
 
@@ -473,15 +475,12 @@ header {
 textarea {
     margin-top: 20px;
     border: 0.5px #ecebf0 solid;
-}
-
-.form_style input {
     padding: 10px 15px;
 }
 
 textarea {
     padding-left: 10px;
-    height: 120px;
+    height: 140px;
     line-height: 120px;
     overflow: hidden;
 }
@@ -549,10 +548,28 @@ footer a {
 }
 
 .g8 {
-    display: inline;
+    /* display: inline; */
     grid-column: 2/3;
     grid-row: 3/4;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 145px;
+    margin-left: 10px;
+}
+
+.g8 .rang1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.g8 .rang2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .g9 {
