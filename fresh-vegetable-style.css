@@ -382,11 +382,10 @@ header {
 }
 
 
-comment faire la même chose mais avec le texte?
+/* comment faire la même chose mais avec le texte? */
 .conteneur_avis {
     width: 100%;
-    animation: fondu 10s ease-in-out infinite both;
-    display: none
+    /* display: none */
 }
 /* .conteneur_avis @keyframes fondu {
     0% {
@@ -621,11 +620,18 @@ footer .g1 img {
 }
 
 
+/* tablettes____________________________________________________________________________________________ */
+@media screen and (min-width: 800px) and (max-width: 966px) {
 
-/* @media screen and (min-width: 200px) and (max-width: 640px) {
+
+}
+/* smartphones____________________________________________________________________________________________ */
+@media screen and (min-width: 312px) and (max-width: 799px) {
 
 
-} */
+    
+}
+
 /* @media screen and (max-width: 1024px) {
     .jensaisrien {
         max-width: 100%;
