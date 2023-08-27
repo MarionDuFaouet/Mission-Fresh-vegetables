@@ -99,9 +99,10 @@ header {
 }
 
 /* CONTENEUR SLIDER */
-.mySlides{
+.mySlides {
     display: flex;
 }
+
 .slideshow-container {
     width: 100%;
     /* max-width: 1200px; */
@@ -113,7 +114,7 @@ header {
     width: 50%;
 }
 
-.slideshow-container img{
+.slideshow-container img {
     position: absolute;
     width: 50%;
 }
@@ -554,7 +555,6 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .g9 {
@@ -603,38 +603,75 @@ footer .g1 img {
 /* tablettes____________________________________________________________________________________________ */
 @media screen and (min-width: 800px) and (max-width: 966px) {
 
-.mySlides{
-}
-    .titre_accueil{
+
+
+    .mySlides {}
+
+    .titre_accueil {}
+
+    .slideshow-container img {}
+
+
+
+    .a-propos_cadre {
+        flex-direction: column;
     }
 
-    .slideshow-container img {
+    .lecture {
+        text-align: center;
     }
 
+    .lecture {
+        text-align: justify;
+        margin-right: 60px;
+    }
 
-
-.a-propos_cadre{
-    flex-direction: column;
-}
-.lecture {
-    text-align: center;
-}
-.lecture {
-    text-align: justify;
-    margin-right: 60px;
-}
     #img_a_propos {
         display: none;
-        
+
     }
-    #lien_fresh{
+
+    #lien_fresh {
         position: relative;
         text-align: center;
     }
 
 
-    
+    .panier img,
+     .hiver img{
+        width: 80%;
+    }
 
+    .conteneur_temoignage h2 {
+        font-size: 2.5em;
+    }
+
+    .conteneur_vert {
+        padding: 20px 20px;
+        margin: 140px 90px 80px 90px;
+    }
+
+    #bouton_submit input {
+        margin-right: 20px;
+    }
+
+    .footer_grid {
+        margin: 0 100px 0 70px;
+    }
+    .g5 {
+        padding-left: 40px;
+    }
+
+    .g8{
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+    .rang1 {
+justify-content: space-between;    }
+    
+    .rang2 {
+justify-content: space-between;
+    }
 }
 
 /* smartphones____________________________________________________________________________________________ */
