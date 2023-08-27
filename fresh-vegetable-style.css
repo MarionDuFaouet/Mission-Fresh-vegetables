@@ -106,7 +106,7 @@ header {
     display: flex;
 }
 .slideshow-container {
-    width: 100%;
+    /* width: 100%; */
     max-width: 1200px;
     position: relative;
     justify-content: space-between;
@@ -118,9 +118,17 @@ header {
     width: 50%;
 }
 
+.slideshow-container img{
+    max-width: 100%;
+}
 .img_slide {
     /* mes images doivent être plus petites!!! WHY?? */
-    width: 50%;
+    /* flex-direction: row;
+    size: 50%;
+    /* width: 50%; */
+    /* max-width: 50%;
+    position: relative;
+    right: 110px; */
 }
 
 /* DOTS */
@@ -131,7 +139,6 @@ header {
     background-color: #bbb;
     border-radius: 50%;
     transition: background-color 0.6s ease;
-    
 }
 
 .pagination {
@@ -352,9 +359,8 @@ header {
 
 .conteneur_avis {
     width: 100%;
-    animation: fondu 10s ease-in-out infinite both;
-    background-color: #43960f;
-    display: none
+    /* animation: fondu 10s ease-in-out infinite both; */
+    /* display: none */
 }
 
 @keyframes fondu {
@@ -376,13 +382,13 @@ header {
 }
 
 
-/* comment faire la même chose mais avec le texte?
+comment faire la même chose mais avec le texte?
 .conteneur_avis {
     width: 100%;
     animation: fondu 10s ease-in-out infinite both;
     display: none
 }
-.conteneur_avis @keyframes fondu {
+/* .conteneur_avis @keyframes fondu {
     0% {
         ( #1);
     }
@@ -625,9 +631,3 @@ footer .g1 img {
         max-width: 100%;
         flex: 0 0 100%;
     } */
-
-
-/*
-https://www.w3schools.com/howto/howto_js_slideshow.asp
-https://autoprefixer.github.io/
-*/
