@@ -77,12 +77,14 @@ body {
 .menu div :hover {
     color: #43960f;
 }
+
 .menu label {
     display: block;
     display: none;
+
 }
 
-#burger{
+#burger {
     display: none;
 }
 
@@ -176,10 +178,12 @@ header {
 .a-propos_cadre {
     display: flex;
     flex-direction: row;
-    margin: 80px 30px 120px 30px;
+    /* justify-content: space-between; */
+    margin: 80px 0px 120px 0px;
     box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 0px 0px 50px 60px;
     position: relative;
+    width: 100%;
 }
 
 #lien_fresh {
@@ -187,11 +191,15 @@ header {
 }
 
 #img_a_propos {
-    height: 470px;
+    position: relative;
+    /* right: 0; */
+    width: 100%;
 }
 
 .lecture {
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 60%;
+    padding-right: 5px;
 }
 
 .lecture h2 {
@@ -245,6 +253,7 @@ header {
 .fresh-vegetable .textfv {
     max-width: 40%;
     flex: 0 0 40%;
+    margin-bottom: 10px;
 }
 
 .fresh-vegetable .panier {
@@ -611,68 +620,74 @@ footer .g1 img {
 
 
 /* tablettes____________________________________________________________________________________________ */
-@media screen and (min-width: 800px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
+    /* menu__________________________________________________________________________ */
     .menu a {
         padding-right: 35px;
     }
+
     #lab {
         display: none;
     }
 
-    .menu label{
+    .menu label {
         display: none;
     }
 
+    /* accueil____________________________________________________________________________ */
     .accueil {
-        padding: 180px 100px 20px 100px;
+        padding: 180px 100px 0px 100px;
     }
 
     .mySlides {
         display: flex;
+        flex-direction: column;
     }
 
     .slideshow-container {
         flex-direction: column;
         width: 100%;
-        /* max-width: 1200px; */
         position: relative;
     }
 
     .text {
-        /* flex-direction: row; */
         width: 100%;
+        text-align: justify;
     }
 
     .slideshow-container img {
-        /* width: 50%; */
-        /* flex-direction: column; */
-        position: absolute;
+        position: relative;
+        transform: translateX(50%);
     }
 
-    .mySlides {}
+    .titre_vert {
+        font-size: 2em;
+    }
 
-    .titre_accueil {}
-
-    .slideshow-container img {}
-
-
-
+    /* a propos____________________________________________________________________ */
     .a-propos_cadre {
+        /* centrer le cadre */
         flex-direction: column;
+        position: relative;
+        width: 90%;
+        text-align: center;
+        align-items: center;
     }
 
     .lecture {
         text-align: center;
     }
 
-    .lecture {
+    .lecture p{
         text-align: justify;
-        margin-right: 60px;
+        width: 100%;
     }
 
     #img_a_propos {
-        display: none;
+        width: 45%;
+        /* transform: translateX(50%); */
+        /* height: auto; */
 
     }
 
@@ -681,28 +696,30 @@ footer .g1 img {
         text-align: center;
     }
 
+    /* fresh_________________________________________________________________________ */
 
-    .panier img,
-    .hiver img {
-        width: 80%;
-        float: right;
-    }
-
-    .hiver {
-        width: 60%;
-        margin-top: -10%;
-        right: 0;
-    }
 
     .conteneur_fresh span {
-        position: absolute;
-        right: 60px;
-        top: 50%;
-        width: 50px;
-        height: 50px;
-        transform: translateY(-50%);
+        display: none;
     }
 
+    .conteneur_fresh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteneur_fresh img {
+        width: 100%;
+    }
+
+    #hiver{
+        /* mais pourquoi je n'arrive pas à déplacer cette image? */
+       right: 0%;
+    }
+
+
+
+    /* temoignage_________________________________________________________ */
     .conteneur_temoignage h2 {
         font-size: 2.5em;
     }
@@ -716,6 +733,7 @@ footer .g1 img {
         font-size: 1em;
     }
 
+    /* contact________________________________________________________________ */
     #bouton_submit input {
         margin-right: 20px;
         margin-top: 10px;
@@ -733,6 +751,7 @@ footer .g1 img {
         padding: 5px;
     }
 
+    /* footer______________________________________________________________ */
     .footer_grid {
         margin: 0 100px 0 70px;
     }
@@ -758,24 +777,25 @@ footer .g1 img {
 
 /* smartphones____________________________________________________________________________________________ */
 @media screen and (max-width: 799px) {
+
     .menu {
         display: flex;
         /* display: block; */
-        padding: 0;
-        margin-left: 10px;
     }
 
     .menu a {
         display: block;
     }
 
-    .menu label{
+    .menu label {
+        /* le placer à droite de l'écran */
         display: block;
+        ;
     }
 
     .nav-menu {
         display: block;
-        transform: translate(-1000px,0);
+        transform: translate(-1000px, 0);
     }
 
     #burger:checked+.nav-menu {
@@ -783,7 +803,49 @@ footer .g1 img {
         transition: all 0.5s ease;
     }
 
+    /* accueil______________________________________________________________ */
+    .accueil{
+        padding: 200px 20px 20px 20px;
+    } 
     
+    .titre_vert,
+    .titre_noir {
+        font-size: 1em;
+        display: inline;
+    }
+
+
+    /* a propos________________________________________________________________ */
+    .a-propos_cadre {
+        margin: 80px 15px 120px 15px;
+        padding: 0px 0px 50px 0px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lecture h2{
+        font-size: 1.5em;
+    }
+
+    .lecture {
+        text-align: center;
+        margin: 10px;
+        justify-content: ;
+    }
+
+    .lecture p {
+        text-align: justify;
+    }
+
+    #img_a_propos {
+        /* display: none; */
+
+    }
+
+    #lien_fresh {
+        position: relative;
+        text-align: center;
+    }
+
     
 }
 
