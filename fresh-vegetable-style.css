@@ -44,6 +44,7 @@ body {
 }
 
 /* MENU---------------------------------------------------------------------------------------------------- */
+
 .menu a {
     text-decoration: none;
     color: black;
@@ -52,7 +53,7 @@ body {
 
 .menu {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -76,6 +77,15 @@ body {
 .menu div :hover {
     color: #43960f;
 }
+.menu label {
+    display: block;
+    display: none;
+}
+
+#burger{
+    display: none;
+}
+
 
 /* HEADER-------------------------------------------------------------------------------------------------------- */
 header {
@@ -601,9 +611,44 @@ footer .g1 img {
 
 
 /* tablettes____________________________________________________________________________________________ */
-@media screen and (min-width: 800px) and (max-width: 966px) {
+@media screen and (min-width: 800px) and (max-width: 1024px) {
 
+    .menu a {
+        padding-right: 35px;
+    }
+    #lab {
+        display: none;
+    }
 
+    .menu label{
+        display: none;
+    }
+
+    .accueil {
+        padding: 180px 100px 20px 100px;
+    }
+
+    .mySlides {
+        display: flex;
+    }
+
+    .slideshow-container {
+        flex-direction: column;
+        width: 100%;
+        /* max-width: 1200px; */
+        position: relative;
+    }
+
+    .text {
+        /* flex-direction: row; */
+        width: 100%;
+    }
+
+    .slideshow-container img {
+        /* width: 50%; */
+        /* flex-direction: column; */
+        position: absolute;
+    }
 
     .mySlides {}
 
@@ -638,8 +683,24 @@ footer .g1 img {
 
 
     .panier img,
-     .hiver img{
+    .hiver img {
         width: 80%;
+        float: right;
+    }
+
+    .hiver {
+        width: 60%;
+        margin-top: -10%;
+        right: 0;
+    }
+
+    .conteneur_fresh span {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-50%);
     }
 
     .conteneur_temoignage h2 {
@@ -648,34 +709,85 @@ footer .g1 img {
 
     .conteneur_vert {
         padding: 20px 20px;
-        margin: 140px 90px 80px 90px;
+        margin: 140px 50px 80px 50px;
+    }
+
+    .avis {
+        font-size: 1em;
     }
 
     #bouton_submit input {
         margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    textarea {
+        height: 170px;
+        line-height: 120px;
+    }
+
+    .form_style {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px 0px 0px;
+        padding: 5px;
     }
 
     .footer_grid {
         margin: 0 100px 0 70px;
     }
+
     .g5 {
         padding-left: 40px;
     }
 
-    .g8{
+    .g8 {
         justify-content: space-between;
         padding-left: 50px;
     }
+
     .rang1 {
-justify-content: space-between;    }
-    
+        justify-content: space-between;
+    }
+
     .rang2 {
-justify-content: space-between;
+        justify-content: space-between;
     }
 }
 
+
 /* smartphones____________________________________________________________________________________________ */
-@media screen and (min-width: 312px) and (max-width: 799px) {}
+@media screen and (max-width: 799px) {
+    .menu {
+        display: flex;
+        /* display: block; */
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .menu a {
+        display: block;
+    }
+
+    .menu label{
+        display: block;
+    }
+
+    .nav-menu {
+        display: block;
+        transform: translate(-1000px,0);
+    }
+
+    #burger:checked+.nav-menu {
+        transform: translate(0, 0);
+        transition: all 0.5s ease;
+    }
+
+    
+    
+}
+
+/* ? */
 
 /* @media screen and (max-width: 1024px) {
     .jensaisrien {
