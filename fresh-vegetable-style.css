@@ -314,7 +314,9 @@ header {
 /* TEMOIGNAGES---------------------------------------------------------------------------------------------------- */
 .conteneur_temoignage {
     background-image: url("images/test2.png");
-    width: 100%;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* width: 100%; */
     height: 610px;
     display: flex;
     flex-direction: column;
@@ -342,11 +344,13 @@ header {
     flex-direction: row;
     padding: 30px 20px;
     position: absolute;
-    right: 0px;
-    margin: 150px;
+   
+    margin: 10%;
 }
 
 .portrait {
+    /* comment faire pour qu'il garde sa taille, que son margin s'adapte? le texte devrait se contraindre
+    par rapport à la vignette?*/
     width: 175px;
     height: 202.517px;
     background-color: rgba(67, 150, 15, 0.8);
@@ -355,7 +359,8 @@ header {
 }
 
 .conteneur_avis {
-    width: 100%;
+    padding-right: 0px;
+    /* width: 100%; */
     /* animation: fondu 10s ease-in-out infinite both; */
     /* display: none */
 }
@@ -422,10 +427,11 @@ header {
 /* CONTACT------------------------------------------------------------------------------------------------------ */
 .f_contact {
     margin-bottom: 90px;
-    height: 700px;
+    /* height: 700px; */
     position: relative;
     background-image: url("banner2.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #contact_head {
@@ -601,6 +607,7 @@ footer .g1 img {
     margin: 20px 0px 20px 0px;
     padding: 10px;
     font-size: 1em;
+    width: 100%;
 }
 
 .copyright p {
@@ -615,7 +622,7 @@ footer .g1 img {
 }
 
 
-/* tablettes____________________________________________________________________________________________ */
+/* petits écrans____________________________________________________________________________________________ */
 @media screen and (max-width: 1024px) {
 
     /* COMMENT RETIRER CETTE MARGE BIZARRE A DROITE? Est-ce que ça a à voir 
@@ -693,9 +700,11 @@ footer .g1 img {
     #lien_fresh {
         position: relative;
         text-align: center;
+        margin-bottom: 10px;
+
     }
 
-    /* fresh_________________________________________________________________________ */
+    /* fresh____________________________________________________________________ */
 
 
     .conteneur_fresh span {
@@ -763,14 +772,12 @@ footer .g1 img {
     }
 }
 
+/* tablettes____________________________________________________________________________________________ */
+@media screen and (max-width: 768px) {
 
-/* smartphones____________________________________________________________________________________________ */
-@media screen and (max-width: 799px) {
-
-    .menu {
+    /* .menu {
         display: flex;
-        /* display: block; */
-    }
+    } */
 
     .menu a {
         display: block;
@@ -783,7 +790,7 @@ footer .g1 img {
     }
 
     .nav-menu {
-        display: block;
+        /* display: block; */
         transform: translate(-1000px, 0);
     }
 
@@ -827,26 +834,16 @@ footer .g1 img {
         margin: 10px;
     }
 
-    .lecture p {
-        text-align: justify;
-    }
-
-
-    #lien_fresh {
-        position: relative;
-        text-align: center;
-    }
-
-    /* temoignage__________________________________________________________________________ */
+    /* temoignage_____________________________________________________________________ */
     .conteneur_temoignage h2 {
         font-size: 2em;
         position: relative;
         text-align: center
     }
 
-    .conteneur_temoignage {
+    /* .conteneur_temoignage {
         background-image: none;
-    }
+    } */
 
     .conteneur_vert {
         display: flex;
@@ -879,17 +876,13 @@ footer .g1 img {
         margin: 10px 30px;
         justify-content: flex-end;
         padding-right: 0;
-        /* width: 100%; */
-        /* max-height: fit-content; */
-        /* comment faire pour que l'iframe puisse avoir u peu plus de hauteur? */
     }
-    #bouton_submit input {;
+    #bouton_submit input {
         margin-bottom: 15px;
     }
     .cadre_form iframe {
         width: auto;
-        height: 300px;
-        /* comment intégrer l'iframe à son conteneur pour avoir marginbottom */
+        
     }
 
     /* footer__________________________________________________________________________ */
@@ -902,7 +895,14 @@ footer .g1 img {
     }
 }
 
-/* ? */
+
+/* smartphones__________________________________________________________________________________________________ */
+@media screen and (max-width: 350px){
+
+
+}
+
+
 
 /* @media screen and (max-width: 1024px) {
     .jensaisrien {
