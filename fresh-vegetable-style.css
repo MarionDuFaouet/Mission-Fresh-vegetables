@@ -178,12 +178,10 @@ header {
 .a-propos_cadre {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    margin: 80px 0px 120px 0px;
+    margin: 80px 20px 120px 20px;
     box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 0px 0px 50px 60px;
     position: relative;
-    width: 100%;
 }
 
 #lien_fresh {
@@ -656,13 +654,21 @@ footer .g1 img {
         text-align: justify;
     }
 
+    .texte {
+        margin-top: 20px;
+    }
+
     .slideshow-container img {
         position: relative;
         transform: translateX(50%);
     }
 
+    .titre_noir {
+        font-size: 30px ;
+    }
+
     .titre_vert {
-        font-size: 2em;
+        font-size: 55px;
     }
 
     /* a propos____________________________________________________________________ */
@@ -679,7 +685,7 @@ footer .g1 img {
         text-align: center;
     }
 
-    .lecture p{
+    .lecture p {
         text-align: justify;
         width: 100%;
     }
@@ -712,9 +718,9 @@ footer .g1 img {
         width: 100%;
     }
 
-    #hiver{
+    #hiver {
         /* mais pourquoi je n'arrive pas à déplacer cette image? */
-       right: 0%;
+        right: 0%;
     }
 
 
@@ -804,14 +810,20 @@ footer .g1 img {
     }
 
     /* accueil______________________________________________________________ */
-    .accueil{
+    .accueil {
         padding: 200px 20px 20px 20px;
-    } 
-    
-    .titre_vert,
+    }
+
+    .texte {
+        font-size: 0.8em;
+    }
+
     .titre_noir {
-        font-size: 1em;
-        display: inline;
+        font-size: 20px;
+    }
+
+    .titre_vert {
+        font-size: 45px;
     }
 
 
@@ -822,31 +834,30 @@ footer .g1 img {
         flex-direction: column;
         justify-content: center;
     }
-    .lecture h2{
+
+    .lecture h2 {
         font-size: 1.5em;
     }
 
     .lecture {
         text-align: center;
         margin: 10px;
-        justify-content: ;
     }
 
     .lecture p {
         text-align: justify;
     }
 
-    #img_a_propos {
-        /* display: none; */
-
-    }
 
     #lien_fresh {
         position: relative;
         text-align: center;
     }
 
-    
+    /* copyright______________________________________________________________________ */
+    .copyright p {
+        font-size: 1em;
+    }
 }
 
 /* ? */
