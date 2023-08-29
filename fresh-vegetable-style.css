@@ -180,7 +180,7 @@ header {
     flex-direction: row;
     margin: 80px 20px 120px 20px;
     box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    padding: 0px 0px 50px 60px;
+    padding-bottom: 60px;
     position: relative;
 }
 
@@ -190,14 +190,13 @@ header {
 
 #img_a_propos {
     position: relative;
-    /* right: 0; */
     width: 100%;
 }
 
 .lecture {
-    /* flex-direction: column; */
     width: 60%;
     padding-right: 5px;
+    padding-left: 60px;
 }
 
 .lecture h2 {
@@ -212,7 +211,7 @@ header {
 }
 
 .lecture p {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     font-size: 1.1em;
     font-weight: 300;
 }
@@ -441,7 +440,6 @@ header {
 .cadre_form {
     background-color: #fff;
     margin: 50px 100px 50px 100px;
-    /* marges du cadre entier */
     box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     display: flex;
     flex-direction: row;
@@ -620,6 +618,9 @@ footer .g1 img {
 /* tablettes____________________________________________________________________________________________ */
 @media screen and (max-width: 1024px) {
 
+    /* COMMENT RETIRER CETTE MARGE BIZARRE A DROITE? Est-ce que ça a à voir 
+    avec la barre de navigation en haut? Ou aves les background images? */
+
     /* menu__________________________________________________________________________ */
     .menu a {
         padding-right: 35px;
@@ -664,7 +665,7 @@ footer .g1 img {
     }
 
     .titre_noir {
-        font-size: 30px ;
+        font-size: 30px;
     }
 
     .titre_vert {
@@ -673,28 +674,20 @@ footer .g1 img {
 
     /* a propos____________________________________________________________________ */
     .a-propos_cadre {
-        /* centrer le cadre */
         flex-direction: column;
         position: relative;
-        width: 90%;
-        text-align: center;
-        align-items: center;
+
     }
 
     .lecture {
         text-align: center;
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .lecture p {
         text-align: justify;
-        width: 100%;
-    }
-
-    #img_a_propos {
-        width: 45%;
-        /* transform: translateX(50%); */
-        /* height: auto; */
-
     }
 
     #lien_fresh {
@@ -728,6 +721,7 @@ footer .g1 img {
     /* temoignage_________________________________________________________ */
     .conteneur_temoignage h2 {
         font-size: 2.5em;
+        top: -10px;
     }
 
     .conteneur_vert {
@@ -745,17 +739,6 @@ footer .g1 img {
         margin-top: 10px;
     }
 
-    textarea {
-        height: 170px;
-        line-height: 120px;
-    }
-
-    .form_style {
-        display: flex;
-        flex-direction: column;
-        margin: 15px 0px 0px 0px;
-        padding: 5px;
-    }
 
     /* footer______________________________________________________________ */
     .footer_grid {
@@ -853,6 +836,65 @@ footer .g1 img {
         position: relative;
         text-align: center;
     }
+
+    /* temoignage__________________________________________________________________________ */
+    .conteneur_temoignage h2 {
+        font-size: 2em;
+        position: relative;
+        text-align: center
+    }
+
+    .conteneur_temoignage {
+        background-image: none;
+    }
+
+    .conteneur_vert {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px;
+        position: absolute;
+        right: 0px;
+        margin: 50px 20px;
+    }
+
+    .conteneur_portrait {
+        /* comment faire pour que ma vignette de s'étire pas? */
+    }
+
+    .avis {
+        width: 100%;
+        font-size: small;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* contact__________________________________________________________________________ */
+    .f_contact {
+        background-image: none;
+    }
+
+    .cadre_form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 30px;
+        justify-content: flex-end;
+        padding-right: 0;
+        /* width: 100%; */
+        /* max-height: fit-content; */
+        /* comment faire pour que l'iframe puisse avoir u peu plus de hauteur? */
+    }
+    #bouton_submit input {;
+        margin-bottom: 15px;
+    }
+    .cadre_form iframe {
+        width: auto;
+        height: 300px;
+        /* comment intégrer l'iframe à son conteneur pour avoir marginbottom */
+    }
+
+    /* footer__________________________________________________________________________ */
+
+
 
     /* copyright______________________________________________________________________ */
     .copyright p {
