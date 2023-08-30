@@ -346,7 +346,7 @@ h3 {
     flex-direction: row;
     padding: 30px 20px;
     position: absolute;
-
+    align-items: center;
     margin: 10%;
 }
 
@@ -357,6 +357,7 @@ h3 {
     height: 202.517px;
     background-color: rgba(67, 150, 15, 0.8);
     background-size: contain;
+    
     animation: fondu 10s ease-in-out infinite both;
 }
 
@@ -846,28 +847,33 @@ footer .g1 img {
     .conteneur_temoignage h2 {
         font-size: 2em;
         position: relative;
-        text-align: center
+        top: 0;
+        text-align: center;
+    }
+    /* comment remonter le titre? */
+
+
+    .conteneur_temoignage{
+        align-items: center;
+        justify-content: center;
     }
 
-
     .conteneur_vert {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 50px;
+        padding: 5px;
         position: absolute;
         right: 0px;
         margin: 50px 20px;
     }
 
-    .conteneur_portrait {
-        /* comment faire pour que ma vignette de s'étire pas? */
-    }
-
     .avis {
         width: 100%;
         font-size: small;
-        padding: 0;
+        padding: 5;
         margin: 0;
+    }
+
+    #guillemets{
+        display: none;
     }
 
     /* contact__________________________________________________________________________ */
@@ -958,6 +964,11 @@ footer .g1 img {
 
 /* smartphones__________________________________________________________________________________________________ */
 @media screen and (max-width: 350px) {
+
+
+    .conteneur_vert{
+        flex-direction: column;
+    }
 
     /* footer________________________________________________________________________ */
 
