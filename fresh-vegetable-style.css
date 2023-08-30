@@ -616,9 +616,6 @@ footer .g1 img {
 /* petits écrans____________________________________________________________________________________________ */
 @media screen and (max-width: 1024px) {
 
-    /* COMMENT RETIRER CE DEBORDEMENT BIZARRE A DROITE? Est-ce que ça a à voir 
-    avec la barre de navigation en haut? Ou avec les background images? */
-
     /* menu__________________________________________________________________________ */
     .menu a {
         padding-right: 35px;
@@ -698,8 +695,7 @@ footer .g1 img {
     .conteneur_fresh span {
         display: none;
     }
-.fresh-vegetable{
-}
+
     .fresh-vegetable .textfv {
         max-width: 100%;
         margin-bottom: 30px;
@@ -720,7 +716,7 @@ footer .g1 img {
         margin-left: 14%;
     }
 
-    /* pas terrible comme méthode pour centrer mes images, mais dans l'urgence j'ai pas trouvé mieux */
+    /* pas terrible comme méthode pour centrer mes images*/
     .hiver {
         width: 50%;
         margin-top: 5%;
@@ -775,9 +771,6 @@ footer .g1 img {
 /* tablettes____________________________________________________________________________________________ */
 @media screen and (max-width: 768px) {
 
-    /* .menu {
-        display: flex;
-    } */
 
     .menu a {
         display: block;
@@ -789,7 +782,6 @@ footer .g1 img {
     }
 
     .nav-menu {
-        /* display: block; */
         transform: translate(-1000px, 0);
     }
 
@@ -955,10 +947,7 @@ footer .g1 img {
 #guillemets{
     display: flex;
 }
-/* .conteneur_vert {
-    display: flex;
-    flex-direction: column;
-} */
+
 }
 
 /* smartphones__________________________________________________________________________________________________ */
