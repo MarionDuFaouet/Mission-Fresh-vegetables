@@ -325,6 +325,11 @@ h3 {
     position: relative;
 }
 
+.conteneur_temoignage :second-child{
+    align-items: center;
+    justify-content: center;
+}
+
 .conteneur_temoignage h2 {
     text-align: right;
     font-weight: bold;
@@ -847,22 +852,19 @@ footer .g1 img {
     .conteneur_temoignage h2 {
         font-size: 2em;
         position: relative;
-        top: 0;
+        top: -10;
         text-align: center;
     }
-    /* comment remonter le titre? */
-
-
-    .conteneur_temoignage{
+    
+    .conteneur_temoignage :second-child{
         align-items: center;
         justify-content: center;
     }
 
     .conteneur_vert {
         padding: 5px;
-        position: absolute;
+        position: relative;
         right: 0px;
-        margin: 50px 20px;
     }
 
     .avis {
