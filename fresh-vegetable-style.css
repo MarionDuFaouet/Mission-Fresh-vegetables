@@ -367,6 +367,13 @@ h3 {
     /* display: none */
 }
 
+.avis {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 0px 40px;
+    padding: 20px;
+}
+
 @keyframes fondu {
     0% {
         background-image: url("images/tes2.jpg");
@@ -410,20 +417,9 @@ h3 {
     }
 } */
 
-
-
 #guillemets {
     align-self: center;
     margin-top: 15px;
-}
-
-
-
-.avis {
-    color: #fff;
-    font-size: 1.1em;
-    margin: 30px 40px;
-    padding: 20px;
 }
 
 /* CONTACT------------------------------------------------------------------------------------------------------ */
@@ -717,6 +713,9 @@ footer .g1 img {
         text-align: justify;
         /* pourquoi cette marge à gauche?*/
     }
+    .textfv h3{
+        text-align: center;
+    }
 
     .conteneur_fresh .row {
         flex-direction: column;
@@ -884,12 +883,9 @@ footer .g1 img {
         padding-right: 0;
     }
 
-    #bouton_submit input {
-        margin-bottom: 15px;
-    }
-
     .cadre_form iframe {
         width: auto;
+        margin-top: 15px;
 
     }
 
@@ -902,6 +898,7 @@ footer .g1 img {
         text-align: center;
         align-items: center;
         gap: 5%;
+        padding-top: 20px;
     }
 
     .inscription {
@@ -927,6 +924,7 @@ footer .g1 img {
     .g4 {
         grid-column: 1/2;
         grid-row: 1/2;
+        
     }
 
     .g7 {
