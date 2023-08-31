@@ -7,12 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fresh vegetable</title>
     <link rel="stylesheet" href="fresh-vegetable-style.css">
-    <script src="fresh-vegetablejs.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.google.com;"> -->
 
 </head>
 
@@ -27,54 +25,90 @@
             </div>
             <label for="burger">&#9776;</label>
             <input type="checkbox" id="burger">
-                <div class="nav-menu">
-                    <a href="#accueil" title="Accueil">Accueil</a>
-                    <a href="#a-propos_cadre" title="À propos">A propos</a>
-                    <a href="#fresh-vegetable" title="Végétables">Vegetables</a>
-                    <a href="#conteneur_temoignage" title="Témoignages">Témoignages</a>
-                    <a href="#f_contact" title="Contact">Contact</a>
-                </div>
-            
+            <div class="nav-menu">
+                <a href="#accueil" title="Accueil">Accueil</a>
+                <a href="#a-propos_cadre" title="À propos">A propos</a>
+                <a href="#fresh-vegetable" title="Végétables">Vegetables</a>
+                <a href="#conteneur_temoignage" title="Témoignages">Témoignages</a>
+                <a href="#f_contact" title="Contact">Contact</a>
+            </div>
+
         </nav>
 
 
         <section class="accueil">
             <span class="marker" id="accueil"></span>
+            <div class="CSSgal">
 
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="text">
-                        <div class="titre_accueil">
-                            <h1><span class="titre_noir">Bienvenue chez Fresh Vegetables</span><br>
-                                <span class="titre_vert">Le"Vegetables Shop"</span>
-                            </h1>
+                <s id="s1"></s>
+                <s id="s2"></s>
+                <s id="s3"></s>
+
+                <div class="slider">
+                    <div class="slide">
+                        <div class="text">
+                            <div class="titre_accueil">
+                                <h1><span class="titre_noir">Bienvenue chez Fresh Vegetables</span><br>
+                                    <span class="titre_vert">Le"Vegetables Shop"</span>
+                                </h1>
+                            </div>
+                            <div class="texte">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique perferendis fugit
+                                    eius
+                                    explicabo
+                                    quas, rem dolorem soluta tenetur quaerat repellat aut voluptate ratione recusandae
+                                    laudantium
+                                    aliquid nostrum minus delectus quibusdam.</p>
+                            </div>
                         </div>
-                        <div class="texte">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique perferendis fugit
-                                eius
-                                explicabo
-                                quas, rem dolorem soluta tenetur quaerat repellat aut voluptate ratione recusandae
-                                laudantium
-                                aliquid nostrum minus delectus quibusdam.</p>
+
+                        <div class="img_slide">
+                            <img src="images/img2.png" alt="brocolis">
                         </div>
                     </div>
-                    <div class="numbertext">1 / 3</div>
-                    <!-- jai retiré les numbertext, et ajouter une des images du slider, 
-                        au cas où je n'arrive pas à programmer le slider. Les images sont
-                        en background dans le css -->
-                    <div class="img_slide">
-                        <img src="images/img2.png" alt="brocolis">
+                    <div class="slide">
+                        <div class="text">
+                            <div class="titre_accueil">
+                                <p><span class="titre_noir">Bienvenue chez Fresh Vegetables</span><br>
+                                    <span class="titre_vert">Le"Vegetables Shop"</span>
+                                </p>
+                            </div>
+                            <div class="texte">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Similique perferendis fugiteius explicabo quas, rem dolorem soluta tenetur quaerat
+                                     repellat.</p>
+                            </div>
+                        </div>
+
+                        <div class="img_slide">
+                            <img src="images/img4.png" alt="chou">
+                        </div>
                     </div>
+                    <div class="slide">
+                        <div class="text">
+                            <div class="titre_accueil">
+                                <p><span class="titre_noir">Bienvenue chez Fresh Vegetables</span><br>
+                                    <span class="titre_vert">Le"Vegetables Shop"</span>
+                                </p>
+                            </div>
+                            <div class="texte">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                            </div>
+                        </div>
+
+                        <div class="img_slide">
+                            <img src="images/img3.png" alt="chou kale">
+                        </div>
+                    </div>
+
                 </div>
 
-                <br>
-                <div class="pagination">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                <div class="bullets">
+                    <a href="#s1"></a>
+                    <a href="#s2"></a>
+                    <a href="#s3"></a>
                 </div>
             </div>
-
         </section>
     </header>
 
@@ -83,7 +117,8 @@
     <main>
         <section class="a-propos_cadre" id="a_propos">
             <span class="marker" id="a-propos_cadre"></span>
-            <div class="lecture"> <!--class="jensaisrien"-->
+            <div class="lecture">
+                <!--class="jensaisrien"-->
                 <h2>A PROPOS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Commodi consequatur quasi rem, impedit atquibusdam.
@@ -153,10 +188,10 @@
                     <div class="avis">
                         <h3>Joahna</h3>
                         <p class="avis_text" id="1">Son avis<br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum
-                            quam aut magni tempore voluptatum. Quidem culpa consequatur molestias, animi similique
-                            explicabo! Ea sint dolorum totam suscipit.</p>
-                        <!-- <p class="avis_text" id="2">Son avis<br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum
+                                quam aut magni tempore voluptatum. Quidem culpa consequatur molestias, animi similique
+                                explicabo! Ea sint dolorum totam suscipit.</p>
+                            <!-- <p class="avis_text" id="2">Son avis<br>
                         <h3>Karl</h3>
                         <p class="avis_text">Son avis<br>
                         <p>lorr sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea
