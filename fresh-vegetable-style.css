@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -105,143 +106,151 @@ header {
 }
 
 .CSSgal {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
     /* cache les deux autres sliders */
-	height: 100%; /* Or set a fixed height */
+    height: 100%;
 }
 
 /* SLIDER */
 
 .CSSgal .slider {
-	height: 100%;
-	white-space: nowrap;
-	font-size: 0;
-	transition: 0.8s;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
     width: calc(1200px - 20%);
-    
+
 }
+
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgal .slider>* {
     font-size: 1rem;
-	display: inline-block;
-	white-space: normal;
-	vertical-align: top;
-	height: 100%;
-	width: 100%;
-	background: none 50% no-repeat;
-	background-size: cover;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
 }
 
 .slide,
-.img_slide img{
+.img_slide img {
     width: 100%;
     padding-bottom: 70px;
 }
-.img_slide{
+
+.img_slide {
     width: 50%;
 }
+
 /* NAVIGATION */
 
 .CSSgal .bullets {
-	position: absolute;
-	z-index: 1;
-	bottom: 0;
-	padding: 10px 0;
-	width: 100%;
-	text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
 }
-.CSSgal .bullets > a {
-	display: inline-block;
-	width:       17px;
-	height:      17px;
-	line-height: 30px;
-	text-decoration: none;
-	text-align: center;
-	background: rgba(255, 255, 255, 1);
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-}
-.CSSgal .bullets > a+a {
-	background: rgba(255, 255, 255, 0.5);} 
-    /* Dim all but first */
 
-.CSSgal .bullets > a:hover {
-	background: rgba(255, 255, 255, 0.7) !important;
+.CSSgal .bullets>a {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.CSSgal .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Dim all but first */
+
+.CSSgal .bullets>a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: #3b3b3b;}
+.CSSgal>s:target~.bullets>* {
+    background: #3b3b3b;
+}
+
 /* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: #43960f;}
-#s2:target ~ .bullets >*:nth-child(2) {background: #43960f;}
-#s3:target ~ .bullets >*:nth-child(3) {background: #43960f;}
+#s1:target~.bullets>*:nth-child(1) {
+    background: #43960f;
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+    background: #43960f;
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+    background: #43960f;
+}
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgal>s:target~.prevNext>* {
+    visibility: hidden;
+}
+
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+}
 
 /* SLIDER ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s1:target~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
 
 .CSSgal a {
-	border-radius: 50%;
-	margin: 0 3px;
-	color: rgba(0,0,0,0.8);
-	text-decoration: none;
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
 }
-.slide{
+
+.slide {
     display: inline-flex !important;
 }
 
-
-
-/* CONTENEUR SLIDER */
-.mySlides {
-    /* display: flex; */
-}
-
-.slideshow-container {
-    /* width: 100%; */
-    /* max-width: 1200px; */
-    /* position: relative; */
-}
-
 .text {
-    /* flex-direction: column; */
     width: 50%;
 }
 
-.slideshow-container img {
-    /* position: absolute; */
-    /* width: 50%; */
-}
 
 
-/* DOTS */
-/* .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    transition: background-color 0.6s ease;
-}
-
-.pagination {
-    bottom: 0;
-    display: flex;
-    transform: translateX(45%);
-} */
 
 
 /* A PROPOS----------------------------------------------------------------------------------------------------- */
@@ -281,7 +290,6 @@ header {
 }
 
 .lecture p {
-    /* justify-content: space-around; */
     font-size: 1.1em;
     font-weight: 300;
 }
@@ -344,12 +352,6 @@ h3 {
     font-weight: 500;
 }
 
-/* .fresh-vegetable h3 {
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 10px;
-} */
-
 .conteneur_fresh span {
     position: absolute;
     right: -25px;
@@ -394,7 +396,7 @@ h3 {
     position: relative;
 }
 
-.conteneur_temoignage :second-child{
+.conteneur_temoignage :second-child {
     align-items: center;
     justify-content: center;
 }
@@ -425,8 +427,6 @@ h3 {
 }
 
 .portrait {
-    /* comment faire pour qu'il garde sa taille, que son margin s'adapte? le texte devrait se contraindre
-    par rapport à la vignette?*/
     width: 175px;
     height: 202.517px;
     background-color: rgba(67, 150, 15, 0.8);
@@ -499,7 +499,6 @@ h3 {
 /* CONTACT------------------------------------------------------------------------------------------------------ */
 .f_contact {
     margin-bottom: 90px;
-    /* height: 700px; */
     position: relative;
     background-image: url("banner2.png");
     background-size: contain;
@@ -709,19 +708,23 @@ footer .g1 img {
     }
 
     /* accueil____________________________________________________________________________ */
-    /* .accueil {
-        padding: 180px 100px 50px 100px;
+    /* .CSSgal .bullets {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
     } */
+
+    .accueil {
+        padding: 24% 0% 5% 10%;
+    }
 
     .slide {
         display: flex;
         flex-direction: column;
-    }
 
-    .slideshow-container {
-        flex-direction: column;
-        width: 100%;
-        /* position: relative; */
     }
 
     .text {
@@ -733,17 +736,18 @@ footer .g1 img {
         margin-top: 20px;
     }
 
-    .slideshow-container img {
-        position: relative;
-        transform: translateX(50%);
-    }
-
     .titre_noir {
         font-size: 30px;
     }
 
     .titre_vert {
         font-size: 55px;
+    }
+
+    .slide,
+    .img_slide img {
+        width: 100%;
+        padding-bottom: 20px;
     }
 
     /* a propos____________________________________________________________________ */
@@ -772,7 +776,7 @@ footer .g1 img {
     }
 
     /* fresh____________________________________________________________________ */
-/* pb de marge de déplacement d'images */
+    /* pb de débordement, de déplacement d'images */
     .conteneur_fresh span {
         display: none;
     }
@@ -784,7 +788,8 @@ footer .g1 img {
         text-align: justify;
         /* pourquoi cette marge à gauche?*/
     }
-    .textfv h3{
+
+    .textfv h3 {
         text-align: center;
     }
 
@@ -920,16 +925,10 @@ footer .g1 img {
         top: -10;
         text-align: center;
     }
-    
-    .conteneur_temoignage :second-child{
+
+    .conteneur_temoignage :second-child {
         align-items: center;
         justify-content: center;
-    }
-
-    .conteneur_vert {
-        padding: 5px;
-        position: relative;
-        right: 0px;
     }
 
     .avis {
@@ -939,7 +938,7 @@ footer .g1 img {
         margin: 0;
     }
 
-    #guillemets{
+    #guillemets {
         display: none;
     }
 
@@ -997,7 +996,7 @@ footer .g1 img {
     .g4 {
         grid-column: 1/2;
         grid-row: 1/2;
-        
+
     }
 
     .g7 {
@@ -1033,7 +1032,7 @@ footer .g1 img {
 @media screen and (max-width: 350px) {
 
 
-    .conteneur_vert{
+    .conteneur_vert {
         flex-direction: column;
     }
 
@@ -1142,7 +1141,7 @@ http://stackoverflow.com/a/34696029/383904
 }
 .CSSgal .bullets > a+a {
 	background: rgba(255, 255, 255, 0.5);}  */
-    /* Dim all but first */
+/* Dim all but first */
 
 /* .CSSgal .bullets > a:hover {
 	background: rgba(255, 255, 255, 0.7) !important;
