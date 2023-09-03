@@ -159,12 +159,12 @@
                             laudantium deserunt facilis aut ducimus, illum id ad quia odio odit.</p>
                     </div>
                     <div class="panier">
-                        <img src="images/v1.jpg" alt="Panier de légumes" id="hiver">
+                        <img src="images/v1.jpg" alt="Panier de légumes">
                         <span>01</span>
                     </div>
                 </div>
                 <div class="hiver">
-                    <img src="images/v2.jpg" alt="Légumes d'hiver" id="hiver">
+                    <img src="images/v2.jpg" alt="Légumes d'hiver">
                     <span>02</span>
                 </div>
             </div>
@@ -177,33 +177,67 @@
 
             <h2 id="temoignage_titre">TÉMOIGNAGES</h2>
 
-            <div class="conteneur_vert">
-                <div class="conteneur_portrait">
-                    <div class="portrait"></div>
-                    <img src="images/test_con.png" alt="" id="guillemets">
-                </div>
-                <div class="conteneur_avis">
-                    <div class="avis">
-                        <h3>Joahna</h3>
-                        <p class="avis_text" id="1">Son avis<br>
+            <div class="conteneur_vert slideshow-container">
+
+                <div class="conteneur_avis mySlides fade" id="avis_1">
+                    <div class="conteneur_portrait">
+                        <div class="portrait">
+                            <img src="images/tes2.jpg" alt="" id="photo de Johanna">
+                            <img class="guillemets" src="images/test_con.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avis_global">
+                        <div class="avis_titles">
+                            <h3>Johanna</h3>
+                            <p class="avis_text">Son avis</p>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique nesciunt rerum
                             quam aut magni tempore voluptatum. Quidem culpa consequatur molestias, animi similique
                             explicabo! Ea sint dolorum totam suscipit.</p>
-                        <!-- <p class="avis_text" id="2">Son avis<br>
-                        <h3>Karl</h3>
-                        <p class="avis_text">Son avis<br>
-                        <p>lorr sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea
-                            natus vero deleniti optio minus, sequi, ex eaque perferendis sit amet consectetur
-                            adipisicing elit. Eius similique nesciunt rerum quam aut magni tempore voluptatum.
-                            Quidemtotam suscipit.</p>
-
-                        <p class="avis_text" id="3">Son avis<br>
-                        <h3>Jeanne</h3>
-                        <p class="avis_text">Son avis<br>
-                        <p>lorr sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea
-                            natus vero deleniti optio minus, sequi, ex eaque perferendis.</p> -->
                     </div>
                 </div>
+
+                <div class="conteneur_avis mySlides fade" id="avis_2">
+                    <div class="conteneur_portrait">
+                        <div class="portrait">
+                            <img src="images/tes.jpg" alt="" id="photo de Karl">
+                            <img class="guillemets" src="images/test_con.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avis_global">
+                        <div class="avis_titles">
+                            <h3>Karl</h3>
+                            <p class="avis_text">Son avis</p>
+                        </div>
+                        <p>lorr sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea natus vero
+                            deleniti optio minus, sequi, ex eaque perferendis sit amet
+                            consectetur adipisicing elit. Eius similique nesciunt rerum quam aut magni tempore
+                            voluptatum. Quidemtotam suscipit.</p>
+                    </div>
+                </div>
+
+                <div class="conteneur_avis mySlides fade" id="avis_3">
+                    <div class="conteneur_portrait">
+                        <div class="portrait">
+                            <img src="images/tes3.jpg" alt="" id="photo de Jeanne">
+                            <img class="guillemets" src="images/test_con.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avis_global">
+                        <div class="avis_titles">
+                            <h3>Jeanne</h3>
+                            <p class="avis_text">Son avis</p>
+                        </div>
+                        <p>lorr sit amet consectetur adipisicing elit. Nam, asperiores! Eveniet quis ullam ea
+                            natus vero deleniti optio minus, sequi, ex eaque perferendis</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagination">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
 
@@ -237,25 +271,25 @@
 
     <footer>
         <div class="row footer_grid">
-            <div class="g1">
+            <div class="g1 footerG">
                 <img src="images/fresh-vegetables.png" alt="logo fresh vegetable" id="logovg">
             </div>
 
-            <div class="g4">
+            <div class="g4 footerG">
                 <h2>Adresse</h2>
             </div>
 
-            <div class="g7">
+            <div class="g7 footerG">
                 <p>ZA des blés noirs <br>
                     (+71 1234567890) <br>
                     fresh@gmail.com</p>
             </div>
 
-            <div class="g5">
+            <div class="g5 footerG">
                 <h2>Nous suivre</h2>
             </div>
 
-            <div class="g8">
+            <div class="g8 footerG">
                 <div class="rang1">
                     <a target="_blank" href="https://twitter.com/" title="Twitter">
                         <img src="images/logo_twitter.png" alt="Lien Twitter"> </a>
@@ -270,11 +304,11 @@
                 </div>
             </div>
 
-            <div class="g6">
+            <div class="g6 footerG">
                 <h2>Newsletter</h2>
             </div>
 
-            <div class="g9">
+            <div class="g9 footerG">
                 <form method="get" action="">
                     <input type="email" name="email" placeholder="Tapez votre email" class="footer_form">
                     <input type="submit" value="S'INSCRIRE" class="inscription">
@@ -285,6 +319,42 @@
             <p>Copyright &copy 2023 Greta Bretagne Sud - Exercice CDUI</p>
         </div>
     </footer>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 
